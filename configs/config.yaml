@@ -1,0 +1,362 @@
+server:
+  http:
+    addr: 0.0.0.0:9000
+    timeout: 10s
+  grpc:
+    addr: 0.0.0.0:9001
+    timeout: 10s
+  consumer_http:
+    addr: 0.0.0.0:9000
+    timeout: 10s
+  job_http:
+    addr: 0.0.0.0:9000
+    timeout: 10s
+  static_http:
+    addr: 0.0.0.0:9000
+    timeout: 10s
+data:
+  database:
+    driver: mysql
+    source: username:pwd@tcp(ip:3306)/wa-fission-v3.1?parseTime=True #公网地址
+    #    max_idle: 200 #业务使用4000*0.9/pod数量/2
+    #    max_open: 200 #业务使用4000*0.9/pod数量
+    max_idle: 100 #预热使用
+    max_open: 200 #预热使用
+  redis:
+    addr: ip:6379 #公网
+    pool_size: 200
+    min_idle_conns: 30
+    #    addr: r-2ze05t2z3sxupj3d0j.redis.rds.aliyuncs.com:6379 #内网
+    # todo zsj 支持账号密码
+  cron_task:
+    resend_retry_msg:
+      enable: true
+      spec: "*/9 * * * *"
+    resend_msg:
+      enable: true
+      spec: "2/10 * * * *"
+    official_queue_monitor:
+      enable: true
+      spec: "3/10 * * * *"
+    unofficial_queue_monitor:
+      enable: true
+      spec: "4/10 * * * *"
+    renew_queue_monitor:
+      enable: true
+      spec: "5/10 * * * *"
+    call_msg_queue_monitor:
+      enable: true
+      spec: "6/10 * * * *"
+    gw_queue_monitor:
+      enable: true
+      spec: "*/2 * * * *"
+    # 变更活动状态
+    activity_task:
+      enable: true
+      spec: "*/3 * * * *"
+    # 飞书统计发送
+    feishu_report_task:
+      enable: true
+      spec: "8,23,38,53 * * * *"
+    email_report_utc8_task:
+      enable: true
+      spec: "0 0 * * *"
+    email_report_utc0_task:
+      enable: true
+      spec: "0 8 * * *"
+    email_report_utc_minus8_task:
+      enable: true
+      spec: "0 16 * * *"
+    retry_official_msg:
+      enable: true
+      spec: "*/1 * * * *"
+    retry_unofficial_msg:
+      enable: true
+      spec: "*/1 * * * *"
+    retry_receipt_msg_record:
+      enable: true
+      spec: "*/1 * * * *"
+    user_remind_free_cdk:
+      enable: true
+      spec: "5,12,23,34,46,57 * * * *"
+    user_remind_v22:
+      enable: true
+      spec: "8,23,38,53 * * * *"
+    user_remind_v3:
+      enable: true
+      spec: "7,18,27,49 * * * *"
+    push_event1_send:
+      enable: false
+      spec: "0 0 * * *"
+    push_event2_send:
+      enable: false
+      spec: "0 0 * * *"
+    push_event3_send:
+      enable: false
+      spec: "0 0 * * *"
+    push_event4_send:
+      enable: false
+      spec: "0 0 * * *"
+  queue:
+    official_key: "official_msg"
+    unofficial_key: "un_official_msg"
+    renew_msg: "renew_msg"
+    call_msg: "call_msg"
+    repeat_help_key: "repeat_help_msg"
+    gw: "gw_msg"
+    gw_recall: "gw_recall_msg"
+    gw_unknown: "gw_unknown_msg"
+  feishu:
+    webhook: https://open.feishu.cn/open-apis/bot/v2/hook/6101933c-df32-44ef-8696-2dfcd184c0d6
+    develop_webhook: https://open.feishu.cn/open-apis/bot/v2/hook/8f8b2e3c-f223-46c9-82de-83671abcaf9a
+  wechant:
+    webhook: https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=5d6f895-dbba-4f4c-87dc-d9542d64bf9c
+  nx:
+    ak:
+    sk:
+    appKey:
+    businessPhone:
+    isVerifySign: false
+  joinGroup:
+    maxNum: 15
+  methodInsertMsgInfo:
+    "winNormal":
+      userAttendPrefixList:
+        - "我要参加MOBA5v5:Legends Together，赢限定头像框，并有概率赢得iPhone手机、10,000卢比等丰厚奖励！\n我的活动码："
+        - "I'm joining the MLBB GOLDEN MONTH bonus sharing event to win 🎁 amazing rewards including $1,000 cash, OPPO phone, 100,000 MLBB Diamonds, and an exclusive skin!\nUse My Code: " #英语
+        - "Saya menyertai acara berkongsi bonus MLBB GOLDEN MONTH untuk memenangi 🎁 ganjaran hebat termasuk wang tunai $1,000, telefon OPPO, 100,000 Berlian MLBB, dan juga skin eksklusif!\nGuna Kod Saya: " #印度语
+        - "Aku ikut event berbagi bonus MLBB GOLDEN MONTH supaya bisa menang 🎁 hadiah keren termasuk uang tunai $1.000, HP OPPO, 100.000 Diamond MLBB, dan skin eksklusif!\nGunakan Kode Punyaku: " #印度语
+      userAttendOfHelpPrefixList:
+        - "的邀请，参与MOBA5v5：Legends Together活动，抽iPhone手机、限定头像框等大奖！\n我的活动码："
+        - "'s invitation to join the MLBB GOLDEN MONTH bonus sharing event! 🎁 Win $1,000 Cash, OPPO Phone, 100,000 MLBB Diamonds, an exclusive skin, and more!\nMy Event Code: "
+        - "untuk menyertai acara berkongsi bonus MLBB GOLDEN MONTH! 🎁 Menangi Wang Tunai $1,000, Telefon OPPO, 100,000 Berlian MLBB, skin eksklusif dan banyak lagi!\nKod Acara Saya: "
+        - "untuk bergabung dalam event berbagi bonus MLBB GOLDEN MONTH! 🎁 Menangkan Uang Tunai $1.000, HP OPPO, 100.000 Diamond MLBB, skin eksklusif, dan hadiah lainnya!\nKode Event Punyaku: "
+      renewFreePrefixList:
+        - "续订活动消息"
+        - "Resubscribe"
+        - "Langgan semula"
+        - "Berlangganan lagi"
+        - "继续参与活动"
+        - "Resubscribe"
+        - "Teruskan Sertai"
+  rsa:
+    privateKey:
+    publicKey:
+  emailConfig:
+    serverHost: smtp.sendcloud.net
+    serverPort: 587
+    fromAddress: whatsapp-data-mlbb25031@mlmy.mobilelegends.com
+    apiUser:
+    apiKey: 4
+    # todo 正式上线改成内部接收人，目前测试阶段不用改
+    toAddressList:
+      #        - test@163.com
+business:
+  activity:
+    id: mlbb25031
+    scheme: "winNormal"
+    needSubscribe: false
+    # todo 正式需要改为false
+    isDebug: false
+    "title":
+      "L01": "头图标题"
+      "L02": "MLBB GOLDEN MONTH bonus sharing event"
+      "L03": "acara berkongsi bonus MLBB GOLDEN MONTH"
+      "L04": "event berbagi bonus MLBB GOLDEN MONTH"
+    "desc":
+      "L01": "头图描述"
+      "L02": "Winning probability greatly increased💥 Join NOW!"
+      "L03": "Peluang menang meningkat drastis💥 Bergabung SEKARANG!"
+      "L04": "Kebarangkalian menang banyak ditingkatkan💥 Sertai SEKARANG!"
+    "imageLink":
+      "L01": "https://mlbbmy.outweb.mobilelegends.com/1742902766193-SlUjXdeELd.png"
+      "L02": "https://mlbbmy.outweb.mobilelegends.com/1742902766193-SlUjXdeELd.png"
+      "L03": "https://mlbbmy.outweb.mobilelegends.com/1742902768173-PjDYRihg5K.png"
+      "L04": "https://mlbbmy.outweb.mobilelegends.com/1742902767186-uA8LdYDTew.png"
+    "showDomain":
+      "L01": "https://sg-play.mobilelegends.com/events/mlbb25031/promotion"
+      "L02": "https://sg-play.mobilelegends.com/events/mlbb25031/promotion"
+      "L03": "https://sg-play.mobilelegends.com/events/mlbb25031/promotion"
+      "L04": "https://sg-play.mobilelegends.com/events/mlbb25031/promotion"
+    helpTextList:
+      - id: "1"
+        bodyText:
+          "winNormal":
+            "L01": "Hi，朋友！你在玩印度最火的Moba游戏吗？\n💪拜托帮我点一下助力，参与MOBA5v5组队活动，必得限定头像框，抽iPhone 15手机、10000卢比等大奖！\n\n帮忙点一下，一起拿大奖～\n👉{{1}}"
+            "L02": "Hi, please help me with a quick tap! Join the MLBB team-up event and 💪 win $1,000 Cash, phones, 100,000 in-game Diamonds, exclusive skins, and more!\n📱Latest update: OPPO phone winning probability boosted 100X💥\n\nJust one tap, and amazing prizes await!\n👉{{1}}"
+            "L03": "Hai, tolong bantu saya dengan klik sahaja! Sertai acara berpasukan MLBB dan 💪 menangi Wang Tunai $1,000, telefon, 100,000 Berlian dalam Permainan, skin eksklusif dan banyak lagi! \n📱Kemas kini terkini: Kebarangkalian memenangi telefon OPPO ditingkatkan 100X💥\n\nHanya dengan satu klik, dan hadiah menarik menanti anda!\n👉{{1}}"
+            "L04": "Hai, tolong bantu aku dengan sekali ketuk! Ikuti event main bersama MLBB dan 💪 menangkan Uang Tunai $1.000, HP, 100.000 Diamond dalam game, skin eksklusif, dan masih banyak lagi!\n📱Update terbaru: Peluang menang HP OPPO meningkat 100X💥\n\nHanya sekali ketuk, hadiah keren menanti!\n👉{{1}}"
+        weight: 100
+    stageAwardList:
+      - helpNum: 3
+        awardName:
+          "01": "位好友，有概率赢得手机大奖！"
+          "02": " more friends for a chance to win the grand phone prize!"
+          "05": " और मित्रों को आमंत्रित करें!"
+        awardLink:
+          "01": https://play.moba5v5.com/events/moba2025wa/promotion/?lang=01&?code={{1}}&mode=3&gpt=10&lp=01&cdk={{2}}&lang={{3}}&channel={{4}}
+          "02": https://play.moba5v5.com/events/moba2025wa/promotion/?lang=02&code={{1}}&mode=3&gpt=10&lp=01&cdk={{2}}&lang={{3}}&channel={{4}}
+          "05": https://play.moba5v5.com/events/moba2025wa/promotion/?lang=05&code={{1}}&mode=3&gpt=10&lp=01&cdk={{2}}&lang={{3}}&channel={{4}}
+      - helpNum: 6
+        awardName:
+          "01": "位好友，限定头像框马上到手"
+          "02": " more friend to get a limited Border!"
+          "05": "ने आपका निमंत्रण स्वीकार कर लिया है।  \n⭐ एक सीमित बॉर्डर पाने के लिए एक और मित्र को आमंत्रित करें!"
+        awardLink:
+          "01": https://play.moba5v5.com/events/moba2025wa/promotion/?lang=01&code={{1}}&mode=5&gpt=10&lp=01&cdk={{2}}&lang={{3}}&channel={{4}}
+          "02": https://play.moba5v5.com/events/moba2025wa/promotion/?lang=02&code={{1}}&mode=5&gpt=10&lp=01&cdk={{2}}&lang={{3}}&channel={{4}}
+          "05": https://play.moba5v5.com/events/moba2025wa/promotion/?lang=05&code={{1}}&mode=5&gpt=10&lp=01&cdk={{2}}&lang={{3}}&channel={{4}}
+      - helpNum: 9
+        awardName:
+          "01": "位好友助力，将随机获得Premium Joy奖池的奖励"
+          "02": " more friends and you will receive a random reward from the Premium Joy prize pool."
+          "05": " और मित्रों को आमंत्रित करें और आप प्रीमियम जॉय पुरस्कार पूल से एक यादृच्छिक इनाम प्राप्त करेंगे।"
+        awardLink:
+          "01": https://play.moba5v5.com/events/moba2025wa/promotion/?lang=01&code={{1}}&mode=8&gpt=10&lp=01&cdk={{2}}&lang={{3}}&channel={{4}}
+          "02": https://play.moba5v5.com/events/moba2025wa/promotion/?lang=02&code={{1}}&mode=8&gpt=10&lp=01&cdk={{2}}&lang={{3}}&channel={{4}}
+          "05": https://play.moba5v5.com/events/moba2025wa/promotion/?lang=05&code={{1}}&mode=8&gpt=10&lp=01&cdk={{2}}&lang={{3}}&channel={{4}}
+      - helpNum: 12
+        awardName:
+          "01": "位好友助力，将随机获得Premium Joy奖池的奖励"
+          "02": " more friends and you will receive a random reward from the Premium Joy prize pool."
+          "05": " और मित्रों को आमंत्रित करें और आप प्रीमियम जॉय पुरस्कार पूल से एक यादृच्छिक इनाम प्राप्त करेंगे।"
+        awardLink:
+          "01": https://play.moba5v5.com/events/moba2025wa/promotion/?lang=01&code={{1}}&mode=8&gpt=10&lp=01&cdk={{2}}&lang={{3}}&channel={{4}}
+          "02": https://play.moba5v5.com/events/moba2025wa/promotion/?lang=02&code={{1}}&mode=8&gpt=10&lp=01&cdk={{2}}&lang={{3}}&channel={{4}}
+          "05": https://play.moba5v5.com/events/moba2025wa/promotion/?lang=05&code={{1}}&mode=8&gpt=10&lp=01&cdk={{2}}&lang={{3}}&channel={{4}}
+      - helpNum: 15
+        awardName:
+          "01": "位好友助力，将随机获得Premium Joy奖池的奖励"
+          "02": " more friends and you will receive a random reward from the Premium Joy prize pool."
+          "05": " और मित्रों को आमंत्रित करें और आप प्रीमियम जॉय पुरस्कार पूल से एक यादृच्छिक इनाम प्राप्त करेंगे।"
+        awardLink:
+          "01": https://play.moba5v5.com/events/moba2025wa/promotion/?lang=01&code={{1}}&mode=8&gpt=10&lp=01&cdk={{2}}&lang={{3}}&channel={{4}}
+          "02": https://play.moba5v5.com/events/moba2025wa/promotion/?lang=02&code={{1}}&mode=8&gpt=10&lp=01&cdk={{2}}&lang={{3}}&channel={{4}}
+          "05": https://play.moba5v5.com/events/moba2025wa/promotion/?lang=05&code={{1}}&mode=8&gpt=10&lp=01&cdk={{2}}&lang={{3}}&channel={{4}}
+    # todo 白名单正式去掉852
+    waIdPrefixList:
+      - "60"
+      - "62"
+      - "63"
+      - "65"
+    waRedirectListPrefix: https://wa.me/?text=
+    wa:
+      shortProject: mlbb
+      shortLinkApi: https://s.mobilelegends.com/shorturl
+      shortLinkBaseUrl: https://s.mobilelegends.com/
+      shortLinkSignKey: HVQSPTbEtzHuvArnpmI3dZWR1TYVvF0T
+    languageList:
+      - "02"
+      - "03"
+      - "04"
+    languageMap:
+      "02": "英语"
+      "03": "马来"
+      "04": "印尼"
+    channelList:
+      - "a"
+      - "b"
+      - "c"
+      - "d"
+      - "e"
+      - "f"
+      - "g"
+      - "h"
+      - "i"
+      - "j"
+      - "k"
+      - "l"
+      - "m"
+      - "n"
+      - "o"
+      - "p"
+      - "q"
+      - "r"
+      - "s"
+      - "t"
+      - "u"
+      - "v"
+      - "w"
+      - "x"
+      - "y"
+      - "z"
+    channelMap:
+      "a": "端内-128通路"
+      "b": "端内-邮件推送"
+      "c": "端外-全球社媒"
+      "d": "端外-FB"
+      "e": "端外-INS"
+      "f": "备用1"
+      "g": "区域-端外FB"
+      "h": "区域-端外IG"
+      "i": "WhatsApp付费推送A（搭运营顺风车，5W usd）"
+      "j": "WhatsApp付费推送B（社牛号码包，95-100）社牛号码分层"
+      "k": "WhatsApp付费推送B（社牛号码包，90-95）社牛号码分层"
+      "l": "WhatsApp付费推送B（社牛号码包，85-90）社牛号码分层"
+      "m": "WhatsApp付费推送B（社牛号码包，80-85）社牛号码分层"
+      "n": "WhatsApp付费推送B（社牛号码包，70-80）社牛号码分层"
+      "o": "WhatsApp付费推送B（社牛号码包，60-70）社牛号码分层"
+      "p": "WhatsApp付费推送B（社牛号码包，50-60）社牛号码分层"
+      "q": "WhatsApp付费推送B（社牛号码包，50以下）社牛号码分层"
+      "r": "WhatsApp付费推送B（社牛号码包，备用）"
+      "s": "WhatsApp付费推送B（社牛号码包，备用）"
+      "t": "区域-WA channel/TG"
+      "u": "区域-端外TT/YT"
+      "v": "区域-端外DC"
+      "w": "区域-端外Others"
+      "x": "备用1"
+      "y": "备用2"
+      "z": "备用3"
+  shortLink:
+    count: 6
+    baseUrls:
+      - https://api.web.mobilelegends.com/events/mlbb25031gateway/invite?code={code}&gpt=8
+      - https://sg-play.mobilelegends.com/events/mlbb25031/promotion/?code={code}&gpt=1&lp=1&mode=3
+      - https://sg-play.mobilelegends.com/events/mlbb25031/promotion/?code={code}&gpt=1&lp=1&mode=6
+      - https://sg-play.mobilelegends.com/events/mlbb25031/promotion/?code={code}&gpt=1&lp=1&mode=9
+      - https://sg-play.mobilelegends.com/events/mlbb25031/promotion/?code={code}&gpt=1&lp=1&mode=12
+      - https://sg-play.mobilelegends.com/events/mlbb25031/promotion/?code={code}&gpt=1&lp=1&mode=15
+  s3Config:
+    preSignUrl: https://api.web.mobilelegends.com/events/mlbb25031static/activity/preSign
+    bucket: outweb-ml-whatapps-act20241201
+    donAmin: https://mlbbmy.outweb.mobilelegends.com/
+  cdk:
+    alarmThreshold: 0.2
+    v0:
+      dir: ./configs/cdk/v0
+      queueName: activity_mlbb25031_cdk_v0 # redis key
+    v3:
+      dir: ./configs/cdk/v3
+      queueName: activity_mlbb25031_cdk_v3
+    v6:
+      dir: ./configs/cdk/v6
+      queueName: activity_mlbb25031_cdk_v6
+    v9:
+      dir: ./configs/cdk/v9
+      queueName: activity_mlbb25031_cdk_v9
+    v12:
+      dir: ./configs/cdk/v12
+      queueName: activity_mlbb25031_cdk_v12
+    v15:
+      dir: ./configs/cdk/v15
+      queueName: activity_mlbb25031_cdk_v15
+  helpCode:
+    coroutineCount: 350
+  statistics:
+    email:
+      webhook:
+  pushEvent1:
+    countryCodes:
+      - "60"
+      - "62"
+      - "63"
+  pushEvent2:
+    countryCodes:
+      - "60"
+      - "62"
+      - "63"
+      - "65"
+  pushEvent3:
+    countryCodes:
+      - "60"
+      - "62"

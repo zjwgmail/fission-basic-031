@@ -1,0 +1,87 @@
+:global {
+  .select-lange {
+    position: relative;
+    width: 226px;
+    
+    .select-trigger {
+      width: 226px;
+      height: 49px;
+      line-height: 49px;
+      background: url(@/assets/images/switch-lang-btn-bg.png) no-repeat 50% 50%;
+      background-size: 226px auto;
+      cursor: pointer;
+      
+      .selected-value {
+        display: block;
+        text-align: center;
+        color: var(--lang-btn-color);
+        font-size: 26px;
+        font-family: '黑体';
+        font-weight: bold;
+      }
+      .selected-icon {
+        position: absolute;
+        right: 60px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      .selected-icon-up {
+        width: 33px;
+        height: 33px;
+        background: url(@/assets/images/switch-lang-up.png) no-repeat 50% 50%;
+        background-size: 33px auto;
+      }
+      .selected-icon-down {
+        width: 33px;
+        height: 33px;
+        background: url(@/assets/images/switch-lang-down.png) no-repeat 50% 50%;
+        background-size: 33px auto;
+      }
+    }
+    
+    .options-container {
+      position: absolute;
+      top: 20px; // 100%
+      left: 50%;
+      transform: translateX(-50%);
+      width: 183px;
+      height: 208px;
+      background: url(@/assets/images/switch-lang-pop-bg.png) no-repeat 50% 50%;
+      background-size: 183px auto;
+      z-index: 10;
+      padding: 40px 0 0;
+      box-sizing: border-box;
+      z-index: -1;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      justify-content: space-between;
+      .option {
+        width: 150px;
+        padding: 10px 0;
+        // height: 49px;
+        // line-height: 49px;
+        font-family: '黑体';
+        font-weight: bold;
+        margin: 0 auto;
+        border-bottom: 1px solid #21a278;
+        text-align: center;
+        color: var(--lang-btn-color);
+        font-size: 26px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        
+        &:last-child {
+          border-bottom: 0 none;
+        }
+        &:hover {
+          opacity: 0.8;
+        }
+        
+        &.active {
+          color: var(--lang-btn-color);
+        }
+      }
+    }
+  }
+}

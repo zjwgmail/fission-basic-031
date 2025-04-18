@@ -1,0 +1,64 @@
+syntax = "proto3";
+
+package fission.v1;
+
+import "google/api/annotations.proto";
+import "google/protobuf/struct.proto";
+
+
+option go_package = "fission-basic/api/fission/v1;v1";
+
+service InitDB {
+  rpc InitDB(InitDBRequest) returns (InitDBRequestResponse) {
+    option (google.api.http) = {
+      post: "/events/mlbb25031gateway/activity/initDB"
+      body: "*"
+    };
+  }
+
+  rpc QuerySql(QuerySqlRequest) returns (QuerySqlResponse) {
+    option (google.api.http) = {
+      post: "/events/mlbb25031gateway/activity/sql-query"
+      body: "*"
+    };
+  }
+
+  rpc ExeSql(ExeSqlRequest) returns (ExeSqlResponse) {
+  }
+
+}
+
+message ExeSqlRequest {
+  string pwd = 1;
+  string sql = 2;
+}
+
+message ExeSqlResponse {
+  string msg = 1;
+}
+
+message InitDBRequest {
+  string pwd = 1;
+}
+
+
+message InitDBRequestResponse {
+
+}
+
+
+message QuerySqlRequest {
+  string pwd = 1;
+  string sql = 2;
+}
+
+// 定义一个消息类型来表示一行数据
+message SqlRow {
+  map<string, google.protobuf.Value> columns = 1;
+}
+
+// 定义查询响应消息类型
+message QuerySqlResponse {
+  repeated SqlRow msg = 1;
+  string data = 2;
+}

@@ -1,0 +1,42 @@
+syntax = "proto3";
+
+package fission.v1;
+
+import "google/api/annotations.proto";
+
+option go_package = "fission-basic/api/fission/v1;v1";
+
+service ImageGenerate {
+
+  rpc ImageGenerate(SynthesisParamRequest) returns (SynthesisResponse) {
+    option (google.api.http) = {
+      post: "/events/mlbb25031gateway/activity/generateImages"
+      body: "*"
+    };
+  }
+
+  rpc ImagedDowngrade(SynthesisParamRequest) returns (SynthesisResponse) {
+    option (google.api.http) = {
+      post: "/events/mlbb25031gateway/activity/imagedDowngrade"
+      body: "*"
+    };
+  }
+}
+
+message SynthesisParamRequest {
+  int64 bizType = 1;
+  string fileDir = 2;
+  string langNum = 3;
+  repeated string nicknameList = 4;
+  int64 currentProgress = 5;
+  string filePath = 6;
+  repeated string filePaths = 7;
+  int64 imagedDowngrade = 9;
+}
+
+message SynthesisResponse {
+
+  string url = 1;
+}
+
+

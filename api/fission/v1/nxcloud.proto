@@ -1,0 +1,139 @@
+syntax = "proto3";
+
+package fission.v1;
+
+import "google/api/annotations.proto";
+
+option go_package = "fission-basic/api/fission/v1;v1";
+
+service NXCloud {
+  rpc UserAttendInfo(UserAttendInfoRequest) returns (UserAttendInfoResponse) {
+    option (google.api.http) = {
+      post: "/events/mlbb25031gateway/activity/userAttendInfo"
+      body: "*"
+    };
+  }
+  // UserAttendInfo2 implements v1.NXCloudHTTPServer.
+  // webhook
+  rpc UserAttendInfo2(UserAttendInfoRequest) returns (UserAttendInfoResponse) {
+    option (google.api.http) = {
+      post: "/events/mlbb25031gateway/activity/userAttendInfo2"
+      body: "*"
+    };
+  }
+
+
+}
+
+
+
+message UserAttendInfoResponse {
+
+}
+
+// WebHookReq 对应 WebHook 请求的消息结构
+message UserAttendInfoRequest {
+  string messaging_product = 1;
+  repeated Status statuses = 2;
+  Metadata metadata = 3;
+  string app_id = 4;
+  string business_phone = 5;
+  string merchant_phone = 6;
+  int32 channel = 7;
+  repeated Contact contacts = 8;
+  repeated Message messages = 9;
+}
+
+// Status 状态对象
+message Status {
+  Conversation conversation = 1;
+  repeated MsgStatusWebHookError errors = 2;
+  string recipient_id = 3;
+  string timestamp = 4;
+  string status = 5;
+  string id = 6;
+  repeated Cost costs = 7;
+  string meta_message_id = 8;
+  string biz_opaque_callback_data = 9;
+}
+
+// MsgStatusWebHookError 错误信息
+message MsgStatusWebHookError {
+  int32 code = 1;
+  int32 meta_code = 2;
+  string title = 3;
+}
+
+// Conversation 会话信息
+message Conversation {
+  string id = 1;
+  string expiration_timestamp = 2;
+  Origin origin = 3;
+}
+
+// Origin 会话类型信息
+message Origin {
+  string type = 1;
+}
+
+// Contact 提供联系人的信息
+message Contact {
+  string wa_id = 1;
+  Profile profile = 2;
+}
+
+// Profile 联系人配置文件
+message Profile {
+  string name = 1;
+}
+
+// Message 入站消息
+message Message {
+  string from = 1;
+  string id = 2;
+  string timestamp = 3;
+  string type = 4;
+  Text text = 5;
+  Button button = 6;
+  Interactive interactive = 7;
+  Cost cost = 8;
+}
+
+// Text 文本消息内容
+message Text {
+  string body = 1;
+}
+
+// Button 按钮消息内容
+message Button {
+  string text = 1;
+  string payload = 2;
+}
+
+// Interactive 互动消息内容
+message Interactive {
+  string type = 1;
+  ButtonReply button_reply = 2;
+}
+
+// ButtonReply 按钮回复消息内容
+message ButtonReply {
+  string id = 1;
+  string title = 2;
+}
+
+// Cost 费用信息
+message Cost {
+  string currency = 1;
+  double price = 2;
+  double foreign_price = 3;
+  int32 cdr_type = 4;
+  string message_id = 5;
+  int32 direction = 6;
+}
+
+// Metadata 元数据信息
+message Metadata {
+  string display_phone_number = 1;
+  string phone_number_id = 2;
+}

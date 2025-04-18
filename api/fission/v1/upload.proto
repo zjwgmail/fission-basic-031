@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package fission.v1;
+
+import "google/api/annotations.proto";
+
+option go_package = "fission-basic/api/fission/v1;v1";
+
+service Upload {
+  rpc UploadFile(UploadRequest) returns (UploadResponse) {
+    option (google.api.http) = {
+      post: "/events/mlbb25031job/activity/test"
+      body: "*"
+    };
+  }
+}
+// 上传请求消息
+message UploadRequest {
+  int32 utc = 1;
+  int64 timestamp = 2;
+  bool sendEmail = 3;
+}
+// 上传响应消息
+message UploadResponse {
+  string message = 1;
+}

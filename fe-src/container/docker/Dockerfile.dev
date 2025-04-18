@@ -1,0 +1,15 @@
+# 容器的工作目录
+# WORKDIR /codespace
+
+# 选择更小体积的基础镜像
+FROM nginx:alpine
+
+# 变量
+ENV NGINXPATH=./container/docker/nginx
+
+# 将定义的配置放入容器的位置
+# COPY ${NGINXPATH}/ssl/* /etc/nginx/ssl/
+COPY ${NGINXPATH}/dev.conf /etc/nginx/conf.d/dev.conf
+COPY ${NGINXPATH}/nginx.conf /etc/nginx/nginx.conf
+
+COPY ./mlbb25031/ /etc/nginx/html/mlbb25031/

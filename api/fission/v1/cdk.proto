@@ -1,0 +1,58 @@
+syntax = "proto3";
+
+package fission.v1;
+
+import "google/api/annotations.proto";
+
+option go_package = "fission-basic/api/fission/v1;v1";
+
+service CDK {
+  rpc GetCDK(GetCDKRequest) returns (GetCDKResponse) {
+    option (google.api.http) = {
+      post: "/events/mlbb25031gateway/activity/cdk",
+      body: "*"
+    };
+  }
+  rpc ImportCDK(ImportCDKRequest) returns (ImportCDKResponse) {
+    option (google.api.http) = {
+      post: "/events/mlbb25031gateway/activity/import/data",
+      body: "*"
+    };
+  }
+  rpc CDKTest(CDKTestRequest) returns (CDKTestResponse) {
+    option (google.api.http) = {
+      get: "/cdk/test"
+    };
+  }
+}
+
+message GetCDKResponse {
+  uint32 code = 1;
+  string message = 2;
+  GetCDKResponseData data = 3;
+}
+
+message GetCDKRequest {
+  string param = 1;
+}
+
+message GetCDKResponseData {
+  string rally_code = 1;
+  string language = 2;
+  string channel = 3;
+  int32 generation = 4;
+  string wa_name = 5;
+  string cdk = 6;
+}
+
+message ImportCDKRequest {
+}
+
+message ImportCDKResponse {
+}
+
+message CDKTestRequest {
+}
+
+message CDKTestResponse {
+}

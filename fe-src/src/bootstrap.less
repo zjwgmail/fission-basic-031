@@ -1,0 +1,437 @@
+.AppContainerWrapper{
+  max-width: 100%;
+  min-height: 100vh;
+  height: auto;
+  background: url(./assets/images/body-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: 1080px auto;
+  background-color: var(--primary-color);
+  padding-bottom: 45px;
+  :global{
+    .pricePopBox{
+      width: 100%;
+      height: 100%;
+      background: url(./assets/images/home-foot-bg.png);
+      background-repeat: no-repeat;
+      background-position: 50% 100%;
+      background-size: 1080px auto;
+      z-index: 10;
+    }
+    .headerBox{
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 25px 25px 0 25px;
+      width: calc(100% - 50px);
+      .logoBox{
+        height: auto;
+        flex-flow: row nowrap;
+        gap: 0 28px;
+        .h5Logo{
+          width: 282px;
+          height: 84px;
+          background: url(./assets/images/h5-logo.png) no-repeat 50% 50%;
+          background-size: 282px auto;
+        }
+      }
+      
+      .langSwitchBox{
+        flex-flow: row nowrap;
+        align-items: center;
+        // gap: 30px;
+        .langBtn{
+          width: 226px;
+          height: 49px;
+          line-height: 49px;
+          background: url(./assets/images/switch-lang-btn-bg.png) no-repeat 50% 50%;
+          background-size: 226px auto;
+          color: var(--lang-btn-color);
+          font-size: 30.5px;
+          text-align: center;
+          // border-radius: 100px;
+          // background: var(--lang-btn-bg-color);
+          margin-left: 0px;
+          &:frist-child{
+            margin-left: 0;
+          }
+        }
+        .active{
+          color: var(--lang-btn-active-color);
+          // text-decoration: underline;
+        }
+      }
+    }
+    .bannerBox{
+      background: no-repeat 50% 0;
+      background-size: 1080px auto;
+      width:100%;
+      height: 1107px;
+      margin-top: 22px;
+    }
+    .packageCodeBox{
+      background: no-repeat 50% center;
+      background-size: 1080px auto;
+      width:100%;
+      height: 303px;
+      margin-top: 0px;
+      .gameCode{
+        top: 28px; left:380px;
+        z-index: 10;
+        width: 570px;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        font-size: 38px;
+        color: var(--game-code-color);
+      }
+      .urlLink{
+        top: 160px;
+        left: 100px;
+        width: 880px;
+        height: 160px;
+        // background-color: red;
+      }
+    }
+    .contentBox{
+      // max-width: calc(1024px - 60px);
+      max-width: 1080px;
+      height: auto;
+      // border: 1px solid var(--content-border-color);
+      // background-color: var(--content-bg-color);
+      // background: url(./assets/images/rule-bg.png) no-repeat 50% 50%;
+      // background-size: cover;
+      // border-radius: 0 40px 0 40px;
+      padding: 0;
+      // padding-top: 130px;
+      .titBox{
+        align-items: center;
+        justify-content: center;
+        flex-flow: row nowrap;
+        padding: 20px 0;
+        height:248px;
+        // .iconL, .iconR{
+        //   background: url(./assets/icons/icon-star-solid.png) no-repeat 50% 50%;
+        //   background-size: 141px auto;
+        //   width: 141px;
+        //   height: 3px;
+        // }
+        // .iconR{
+        //   transform: scale(-1, 1);
+        // }
+        // .tit{
+        //   font-size: 46px;
+        //   color: var(--content-tit-color);
+        //   padding:0 16px;
+        //   line-height: 1;
+        //   text-transform: uppercase;
+        // }
+      }
+      .activeRuleContentBox{
+        font-size: 27px;
+        color: var(--content-text-color);
+        background: url(./assets/images/home-package-bg.png) no-repeat 50% 50%;
+        background-size: 1080px auto;
+        padding:80px 80px 0;
+        height: 1101px;
+        box-sizing: border-box;
+        .itText{
+          flex-flow: row nowrap;
+          // align-items: center;
+          padding-bottom: 20px;
+          color: var(--content-text-color);
+          font-weight: bold;
+        }
+        // .serial{
+        //   width: 46px;
+        //   height: 46px;
+        //   line-height: 46px;
+        //   color:#fff;
+        //   background-color: #a51a43;
+        //   border-radius: 100%;
+        //   transform: translate(0, 4px);
+        // }
+        .val{
+          padding-left: 13px;
+          line-height: 1.3;
+          flex: 1;
+          // font-family: 'futuralt-heavy-book';
+        }
+        .itImg{
+          max-width: 880px;
+          // max-height: 100%;
+          object-fit: contain;
+          margin:0 auto;
+          // padding-left: 50px;
+        }
+        .goRulePage{
+          color: var(--content-link-color); 
+          // color: var(--content-link-color);
+          // background-color: #9d3806;
+          // text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+
+.langStyle02{
+  :global{
+    .bannerBox1{
+      background-image: url(./assets/images/en/head-banner1.png);
+      
+    }
+    .bannerBox3{
+      background-image: url(./assets/images/en/head-banner3.png);
+      
+    }
+    .bannerBox6{
+      background-image: url(./assets/images/en/head-banner6.png);
+      
+    }
+    .bannerBox9{
+      background-image: url(./assets/images/en/head-banner9.png);
+      
+    }
+    .bannerBox12{
+      background-image: url(./assets/images/en/head-banner12.png);
+      
+    }
+    .bannerBox15{
+      background-image: url(./assets/images/en/head-banner15.png);
+      
+    }
+    // .packageCodeBox1{
+    //   background-image: url(./assets/images/en/package-code1.png);
+    //   height: 500px;
+    // }
+    .packageCodeBox1, .packageCodeBox3, .packageCodeBox6, .packageCodeBox9, .packageCodeBox12, .packageCodeBox15{
+      background-image: url(./assets/images/en/package-code.png);
+      height: 303px;
+      // margin-top: 0; // -230px;
+    }
+
+    // .packageCodeBoxMode1{}
+    .packageCodeBoxMode3{}
+    .packageCodeBoxMode5{}
+    .packageCodeBoxMode8{}
+
+    .contentBox{
+      .titBox{
+        background: url(./assets/images/en/game-desc-title.png) no-repeat 50% 50%;
+        background-size: 1080px auto;
+      }
+    }
+  }
+}
+.langStyle03{
+  :global{
+    .bannerBox1{
+      background-image: url(./assets/images/my/head-banner1.png);
+      
+    }
+    .bannerBox3{
+      background-image: url(./assets/images/my/head-banner3.png);
+      
+    }
+    .bannerBox6{
+      background-image: url(./assets/images/my/head-banner6.png);
+      
+    }
+    .bannerBox9{
+      background-image: url(./assets/images/my/head-banner9.png);
+      
+    }
+    .bannerBox12{
+      background-image: url(./assets/images/my/head-banner12.png);
+      
+    }
+    .bannerBox15{
+      background-image: url(./assets/images/my/head-banner15.png);
+      
+    }
+    // .packageCodeBox1{
+    //   background-image: url(./assets/images/my/package-code1.png);
+    //   height: 500px;
+    // }
+    .packageCodeBox1, .packageCodeBox3, .packageCodeBox6, .packageCodeBox9, .packageCodeBox12, .packageCodeBox15{
+      background-image: url(./assets/images/my/package-code.png);
+      height: 303px;
+      // margin-top: 0; // -230px;
+    }
+
+    // .packageCodeBoxMode1{}
+    .packageCodeBoxMode3{}
+    .packageCodeBoxMode5{}
+    .packageCodeBoxMode8{}
+
+    .contentBox{
+      .titBox{
+        background: url(./assets/images/my/game-desc-title.png) no-repeat 50% 50%;
+        background-size: 1080px auto;
+      }
+    }
+  }
+}
+.langStyle04{
+  :global{
+    .bannerBox1{
+      background-image: url(./assets/images/id/head-banner1.png);
+      
+    }
+    .bannerBox3{
+      background-image: url(./assets/images/id/head-banner3.png);
+      
+    }
+    .bannerBox6{
+      background-image: url(./assets/images/id/head-banner6.png);
+      
+    }
+    .bannerBox9{
+      background-image: url(./assets/images/id/head-banner9.png);
+      
+    }
+    .bannerBox12{
+      background-image: url(./assets/images/id/head-banner12.png);
+      
+    }
+    .bannerBox15{
+      background-image: url(./assets/images/id/head-banner15.png);
+      
+    }
+    // .packageCodeBox1{
+    //   background-image: url(./assets/images/id/package-code1.png);
+    //   height: 500px;
+    // }
+    .packageCodeBox1, .packageCodeBox3, .packageCodeBox6, .packageCodeBox9, .packageCodeBox12, .packageCodeBox15{
+      background-image: url(./assets/images/id/package-code.png);
+      height: 303px;
+      // margin-top: 0;
+    }
+    .packageCodeBox5{}
+    .packageCodeBox8{}
+
+    // .packageCodeBoxMode1{}
+    .packageCodeBoxMode3{}
+    .packageCodeBoxMode5{}
+    .packageCodeBoxMode8{}
+
+    .contentBox{
+      .titBox{
+        background: url(./assets/images/id/game-desc-title.png) no-repeat 50% 50%;
+        background-size: 1080px auto;
+      }
+    }
+  }
+}
+
+
+.InvitationActivityRulesWrapper{
+  background-image: url(@/assets/images/rule-body-bg-top.jpg), url(@/assets/images/rule-body-bg-bottom.jpg);
+  background-size: 1080px auto, 1080px auto;
+  background-repeat: no-repeat, no-repeat;
+  background-position: 50% 0, 50% 100%;
+  background-color: var(--rule-bg-color);
+  :global{
+    .pricePopBox{
+      background-image: url(./assets/images/rule-foot-bg.png);
+    }
+
+    .ruleTitleBox{
+      background: no-repeat 50% 50%;
+      width:100%; 
+      margin-top: -120px;
+      margin-bottom: 0;
+    }
+    .ruleTitleBox02{
+      background-image: url(./assets/images/en/rule-tit.png);
+      background-size: 1080px auto;
+      height: 339px;
+    }
+    .ruleTitleBox03{
+      background-image: url(./assets/images/my/rule-tit.png);
+      background-size: 1080px auto;
+      height: 339px;
+    }
+    .ruleTitleBox04{
+      background-image: url(./assets/images/id/rule-tit.png);
+      background-size: 1080px auto;
+      height: 339px;
+    }
+    .contentBox{
+      // margin-top: 100px;
+      padding:0;
+      .ruleContentReaptBox{
+        transform: translateY(200px);
+        background: url(./assets/images/rule-content-bg-repeat-y.png) repeat-y 50% 0;
+        background-size: 999px auto;
+        height: calc(100% - 400px);
+        z-index: -1;
+        width: 100%;
+      }
+      .activeRuleContentBox{
+        background: url(./assets/images/rule-content-bg-top.png) no-repeat 50% 0, url(./assets/images/rule-content-bg-bottom.png) no-repeat 50% 100%;
+        background-size: 999px auto, 999px auto;
+        padding: 80px 80px 260px;
+        height: auto;
+        min-height: 2562px; // 2670px
+        .itText{
+          color: var(--rule-content-text-color);
+        }
+        .serial{
+          width: 33px;
+          height: 33px;
+          line-height: 33px;
+          background-color: #b87e25;
+          color: #fff;
+          border-radius: 100%;
+          text-align: center;
+          font-size: 31px;
+          font-weight: bold;
+          transform: translateY(4px);
+        }
+      }
+    }
+
+    .prizeTableTitleImg02{
+      background-image: url(./assets/images/en/prize-title.png);
+      background-size: 744px auto;
+      height: 100px;
+    }
+    .prizeTableTitleImg05{
+      background-image: url(./assets/images/my/prize-title.png);
+      background-size: 744px auto;
+      height: 100px;
+    }
+    .prizeTableBox{
+      max-width: 1024px;
+      border: 0;
+      border-radius: 0;
+      padding: 0;
+      table{
+        width: 100%;
+        height: 100%;
+        font-size: 40px;
+        color: #fff;
+        background-color: #600515;
+        th, td {
+          text-align: center;
+          padding: 16px 0;
+          border-right: 1px solid #972944;
+          border-bottom: 1px solid #972944;
+        }
+      }
+      .th{
+        color:#f3daa8;
+        &:last-child{
+          border-right: 0;
+        }
+      }
+      td{
+        &:last-child{
+          border-right: 0;
+        }
+      }
+    }
+  }
+}

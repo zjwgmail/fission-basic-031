@@ -1,0 +1,18 @@
+version: "3"
+services:
+  mlbb25031:
+    container_name: "container_mlbb25031"
+    image: "prod-mlbb25031-web:${TAG}"
+    build:
+      context: .
+      dockerfile: ./container/docker/Dockerfile.prod
+    ports:
+      - 80:80
+  devmlbb25031:
+    container_name: "container_dev_mlbb25031"
+    image: "dev-mlbb25031-web${TAG:-dev}"
+    build:
+      context: .
+      dockerfile: ./container/docker/Dockerfile.dev
+    ports:
+      - 19103:19103

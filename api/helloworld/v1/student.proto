@@ -1,0 +1,88 @@
+syntax = "proto3";
+
+package helloworld.v1;
+
+import "google/api/annotations.proto";
+
+option go_package = "fission-basic/api/helloworld/v1;v1";
+
+service Student {
+    rpc AddStudent(AddStudentRequest) returns (AddStudentResponse)  {
+        option (google.api.http) = {
+            post: "/students"
+            body: "*"
+        };
+    }
+    rpc GetStudent(GetStudentRequest) returns (GetStudentRespose) {
+        option (google.api.http) = {
+            get: "/students/{name}"
+        };
+    }
+    rpc ListStudents(ListStudentsRequest) returns (ListStudentsResponse) {
+        option (google.api.http) = {
+            get:"/students"
+        };
+    }
+
+    rpc MessageSend(InvitationRequest) returns (InvitationResponse) {
+        option (google.api.http) = {
+            get:"/msgSend/test"
+        };
+    }
+
+    rpc ActivityGet(InvitationRequest) returns (InvitationResponse) {
+        option (google.api.http) = {
+            get:"/activity/get"
+        };
+    }
+
+    rpc TimeGet(InvitationRequest) returns (InvitationResponse) {
+        option (google.api.http) = {
+            get:"/time/get"
+        };
+    }
+
+    rpc Invitation(InvitationRequest) returns (InvitationResponse) {
+    }
+}
+
+message InvitationRequest {
+    string code = 1;
+}
+
+message InvitationResponse {
+    string html_text = 2;
+}
+
+message ListStudentsRequest {
+    int32 offset = 1;
+    int32 lenth = 2;
+}
+
+message Stu {
+    int64 id = 1;
+    string name = 2;
+    int64 created_at = 3;
+}
+
+message ListStudentsResponse {
+    repeated Stu stus = 1;
+    int64 total = 2;
+}
+
+message GetStudentRequest {
+    string name = 1;
+}
+
+message GetStudentRespose {
+    string name = 1;
+    int64 create_time = 2;
+}
+
+message AddStudentRequest {
+    string name = 1;
+}
+
+message AddStudentResponse {
+    string name = 1;
+}

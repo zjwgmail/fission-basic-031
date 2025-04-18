@@ -1,0 +1,1212 @@
+MsgMap:
+  # 开团消息
+  startGroupMsg:
+    # 语言
+    "L01":
+      "winNormal":
+        interactive:
+          type: cta_url
+          imageLink: https://mlbbmy.outweb.mobilelegends.com/1742902764505-OEVTilyBih.png
+          bodyText: "印度最火的MOBA游戏送福利啦！🎊\n\n赶快邀请你的好友来MOBA5v5一起战斗，限定头像框、iPhone手机，诸多大奖等你拿！\n\n🎉邀请3人：最高可获得光启皮肤、iPhone 15手机\n🎉邀请5人：必得限定头像框\n🎉邀请8人：最高可获得限定皮肤\n\n活动规则：https://s.moba5v5.com/YkFH5SI\n👇快点击下方按钮邀请好友吧！"
+          footerText:
+          action:
+            displayText: 邀请好友
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang01?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&lang={{4}}&channel={{5}}
+    "L02": #英语
+      "winNormal":
+        interactive:
+          type: cta_url
+          imageLink: https://mlbbmy.outweb.mobilelegends.com/1742902764505-OEVTilyBih.png
+          bodyText: "Invite specified numbers of friends for chances to win amazing rewards! 🎊\n\nPrize Pool:\n🎉1600 OPPO Phones Up for Grabs (MASSIVELY Boosted Winning Chances💥)\n🎉Up to $1,000 cash\n🎉100,000 In-game Diamonds\n🎉Exclusive skins, and tons of items\n\nEvent rules: https://s.mobilelegends.com/HCEyRYe\n👇Invite friends now to boost your winning chances!"
+          footerText:
+          action:
+            displayText: Invite Friends
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang02?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&lang={{4}}&channel={{5}}
+    "L03": #马来
+      "winNormal":
+        interactive:
+          type: cta_url
+          imageLink: https://mlbbmy.outweb.mobilelegends.com/1742969574028-U0WYSvE7HC.png
+          bodyText: "Jemput sejumlah rakan tertentu untuk berpeluang memenangi ganjaran hebat! \n\nHadiah Terkumpul:\n🎉1,600 Telefon OPPO Untuk Dimenangi (Peluang Menang BANYAK Ditingkatkan💥)\n🎉Wang Tunai Sehingga $1,000\n🎉Sehingga 100,000 Berlian dalam permainan\n🎉Skin eksklusif dan item yang lumayan\n\nPeraturan acara: https://s.mobilelegends.com/id2tLwq\n👇Jemput rakan sekarang untuk meningkatkan peluang kemenangan anda!"
+          footerText:
+          action:
+            displayText: Jemput Rakan
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang05?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&lang={{4}}&channel={{5}}
+    "L04": #印尼
+      "winNormal":
+        interactive:
+          type: cta_url
+          imageLink: https://mlbbmy.outweb.mobilelegends.com/1742969572218-PGZqfoNmqy.png
+          bodyText: "Undang teman dengan jumlah tertentu untuk berkesempatan memenangkan hadiah luar biasa! 🎊\n\nPrize Pool:\n🎉1.600 HP OPPO Siap Dimenangkan (Peluang Menang Meningkat DRASTIS💥)\n🎉Hadiah Uang Tunai Hingga $1.000\n🎉Hingga 100.000 Diamond dalam Game\n🎉Skin eksklusif, dan item melimpah\n\nPeraturan event: https://s.mobilelegends.com/tO82hdH\n👇Undang teman sekarang untuk meningkatkan peluang menang!"
+          footerText:
+          action:
+            displayText: Undang Teman
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang05?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&lang={{4}}&channel={{5}}
+
+
+  # 单人助力成功信息 12
+  helpTaskSingleSuccessMsg1: #进度12
+    # 语言
+    "L01":
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "恭喜，你的好友{{1}}接受了你的邀请。\n你离iPhone手机更进一步，再邀请{{2}}位好友，有概率赢得手机大奖！"
+          footerText:
+          action:
+            displayText: 继续邀请好友
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang01?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&lang={{4}}&channel={{5}}
+    "L02": #英语
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "🎉Congratulations! Your friend {{1}} has accepted your invitation.\nInvite {{2}} more friends to get the Premium Chest with a chance to win $100 cash and an exclusive skin!"
+          footerText:
+          action:
+            displayText: Invite More Friends
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang02?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&lang={{4}}&channel={{5}}
+    "L03": #马来
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "🎉Tahniah! Rakan anda {{1}} telah menerima jemputan anda. \nJemput {{2}} lagi rakan untuk mendapatkan Peti Premium dengan peluang untuk memenangi $100 wang tunai dan skin eksklusif!"
+          footerText:
+          action:
+            displayText: Jemput Rakan Lagi
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang05?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&lang={{4}}&channel={{5}}
+    "L04": #印尼
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "🎉Selamat! Temanmu {{1}} sudah menerima undanganmu.\nUndang {{2}} teman lagi untuk mendapatkan Premium Chest dengan peluang memenangkan uang tunai $100 dan skin eksklusif!"
+          footerText:
+          action:
+            displayText: Undang Teman Lagi
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang05?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&lang={{4}}&channel={{5}}
+
+  #进度45
+  helpTaskSingleSuccessMsg2:
+    # 语言
+    "L01":
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "恭喜，你的好友{{1}}接受了你的邀请。\n再邀请1位好友，限定头像框马上到手！"
+          footerText:
+          action:
+            displayText: 继续邀请好友
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang01?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&lang={{4}}&channel={{5}}
+    "L02": #英语
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "🎉Congratulations! Your friend {{1}} has accepted your invitation.\nInvite {{2}} more friends to get the Stellar Chest with a chance to win an OPPO phone and an exclusive skin!"
+          footerText:
+          action:
+            displayText: Invite More Friends
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang02?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&lang={{4}}&channel={{5}}
+    "L03": #马来
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "🎉Tahniah! Rakan anda {{1}} telah menerima jemputan anda. \nJemput {{2}} lagi rakan untuk mendapatkan Peti Stellar dengan peluang untuk memenangi telefon OPPO dan skin eksklusif!"
+          footerText:
+          action:
+            displayText: Jemput Rakan Lagi
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang05?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&lang={{4}}&channel={{5}}
+    "L04": #印尼
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "🎉Selamat! Temanmu {{1}} sudah menerima undanganmu.\nUndang {{2}} teman lagi untuk mendapatkan Stellar Chest dengan peluang memenangkan HP OPPO dan skin eksklusif!"
+          footerText:
+          action:
+            displayText: Undang Teman Lagi
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang05?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&lang={{4}}&channel={{5}}
+
+  #进度78
+  helpTaskSingleSuccessMsg3:
+    # 语言
+    "L01":
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "恭喜，你的好友{{1}}接受了你的邀请。\n再邀请{{2}}位好友助力，将随机获得Premium Joy奖池的奖励"
+          footerText:
+          action:
+            displayText: 继续邀请好友
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang01?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&lang={{4}}&channel={{5}}
+    "L02": #英语
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "🎉Congratulations! Your friend {{1}} has accepted your invitation.\nInvite {{2}} more friends to get the Moonlight Chest with a chance to upgrade to a 100,000 in-game Diamonds pack!"
+          footerText:
+          action:
+            displayText: Invite More Friends
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang02?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&lang={{4}}&channel={{5}}
+    "L03": #马来
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "🎉Tahniah! Rakan anda {{1}} telah menerima jemputan anda. \nJemput {{2}} lagi rakan untuk mendapatkan Peti Moonlight dengan peluang untuk menaik taraf ke 100,000 pek Berlian dalam permainan!"
+          footerText:
+          action:
+            displayText: Jemput Rakan Lagi
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang05?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&lang={{4}}&channel={{5}}
+    "L04": #印尼
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "🎉Selamat! Temanmu {{1}} sudah menerima undanganmu.\nUndang {{2}} teman lagi untuk mendapatkan Moonlight Chest dengan peluang untuk meningkatkan menjadi paket 100,000 Diamond dalam game!"
+          footerText:
+          action:
+            displayText: Undang Teman Lagi
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang05?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&lang={{4}}&channel={{5}}
+      #进度10-11
+  helpTaskSingleSuccessMsg4:
+    # 语言
+    "L01":
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "恭喜，你的好友{{1}}接受了你的邀请。\n再邀请{{2}}位好友助力，将随机获得Premium Joy奖池的奖励"
+          footerText:
+          action:
+            displayText: 继续邀请好友
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang01?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&lang={{4}}&channel={{5}}
+    "L02": #英语
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "🎉Congratulations! Your friend {{1}} has accepted your invitation.\nInvite {{2}} more friends to get an Apex Chest with a chance to win $500 cash and an exclusive skin!"
+          footerText:
+          action:
+            displayText: Invite More Friends
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang02?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&lang={{4}}&channel={{5}}
+    "L03": #马来
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "🎉Tahniah! Rakan anda {{1}} telah menerima jemputan anda. \nJemput {{2}} lagi rakan untuk mendapatkan Peti Apex dengan peluang untuk memenangi $500 wang tunai dan skin eksklusif!"
+          footerText:
+          action:
+            displayText: Jemput Rakan Lagi
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang05?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&lang={{4}}&channel={{5}}
+    "L04": #印尼
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "🎉Selamat! Temanmu {{1}} sudah menerima undanganmu.\nUndang {{2}} teman lagi untuk mendapatkan Apex Chest dengan peluang memenangkan uang tunai $500 dan skin eksklusif!"
+          footerText:
+          action:
+            displayText: Undang Teman Lagi
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang05?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&lang={{4}}&channel={{5}}  #进度13-14
+  helpTaskSingleSuccessMsg5:
+    # 语言
+    "L01":
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "恭喜，你的好友{{1}}接受了你的邀请。\n再邀请{{2}}位好友助力，将随机获得Premium Joy奖池的奖励"
+          footerText:
+          action:
+            displayText: 继续邀请好友
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang01?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&lang={{4}}&channel={{5}}
+    "L02": #英语
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "🎉Congratulations! Your friend {{1}} has accepted your invitation.\nInvite {{2}} more friends to get a Glory Chest with a chance to win $1,000 cash and an exclusive skin!"
+          footerText:
+          action:
+            displayText: Invite More Friends
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang02?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&lang={{4}}&channel={{5}}
+    "L03": #马来
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "🎉Tahniah! Rakan anda {{1}} telah menerima jemputan anda. \nJemput {{2}} lagi rakan untuk mendapatkan Peti Glory dengan peluang untuk memenangi $1,000 wang tunai dan skin eksklusif!"
+          footerText:
+          action:
+            displayText: Jemput Rakan Lagi
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang05?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&lang={{4}}&channel={{5}}
+    "L04": #印尼
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "🎉Selamat! Temanmu {{1}} sudah menerima undanganmu.\nUndang {{2}} teman lagi untuk mendapatkan Glory Chest dengan peluang memenangkan uang tunai $1.000 dan skin eksklusif!"
+          footerText:
+          action:
+            displayText: Undang Teman Lagi
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang05?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&lang={{4}}&channel={{5}}
+
+  # 3人助力完成信息
+  helpOverMsg1:
+    # 语言
+    "L01":
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "恭喜，你的好友{{1}}接受了你的邀请。\n你已邀请满{{2}}位好友，将随机获得Exclusive Wow奖池的奖励\n立即领取:{{3}}\n\n再告诉你一条独家情报：再邀请{{4}}位好友，即可获得邀请达人头像框！"
+          footerText:
+          action:
+            displayText: 邀请好友
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang01?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&mode=3&lang={{4}}&channel={{5}}
+    "L02": #英语
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "🎉Congratulations! Your friend {{1}} has accepted your invitation.\nYou've successfully invited 3 friends and earned a Premium Chest!\nClaim now: {{3}}\n\nInvite 3 more friends to get a Stellar Chest with a chance to win an OPPO phone!"
+          footerText:
+          action:
+            displayText: Invite More Friends
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang02?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&mode=3&lang={{4}}&channel={{5}}
+    "L03": #马来
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "🎉Tahniah! Rakan anda {{1}} telah menerima jemputan anda. \nAnda telah berjaya menjemput 3 rakan dan telah memperoleh Peti Premium! \nTuntut sekarang: {{3}} \n\nJemput 3 lagi rakan untuk mendapatkan Peti Stellar dengan peluang untuk memenangi telefon OPPO!"
+          footerText:
+          action:
+            displayText: Jemput Rakan Lagi
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang05?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&mode=3&lang={{4}}&channel={{5}}
+    "L04": #印尼
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "🎉Selamat! Temanmu {{1}} sudah menerima undanganmu.\nKamu berhasil mengundang 3 teman dan mendapatkan Premium Chest!\nKlaim sekarang: {{3}}\n\nUndang 3 teman lagi untuk mendapatkan Stellar Chest dengan peluang memenangkan HP OPPO!"
+          footerText:
+          action:
+            displayText: Undang Teman Lagi
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang05?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&mode=3&lang={{4}}&channel={{5}}
+
+
+  # 6人助力完成信息
+  helpOverMsg2:
+    # 语言
+    "L01":
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "恭喜，你的好友{{1}}接受了你的邀请。\n你已邀请满{{2}}位好友，获得限定头像框！\n立即领取:{{3}}\n\n你触发了追加任务！再邀请{{4}}人，将随机获得Premium Joy奖池的奖励！"
+          footerText:
+          action:
+            displayText: 继续邀请好友
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang01?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&mode=5&lang={{4}}&channel={{5}}
+    "L02": #英语
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "🎉Congratulations! Your friend {{1}} has accepted your invitation.\nYou've successfully invited 6 friends and earned a Stellar Chest!\nClaim now: {{3}}\n\nInvite 3 more friends to get an Apex Chest with a chance to upgrade to a 100,000 in-game Diamonds pack!"
+          footerText:
+          action:
+            displayText: Invite More Friends
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang02?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&mode=5&lang={{4}}&channel={{5}}
+    "L03": #马来
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "🎉Tahniah! Rakan anda {{1}} telah menerima jemputan anda. \nAnda telah berjaya menjemput 6 rakan dan telah memperoleh Peti Stellar! \nTuntut sekarang: {{3}} \n\nJemput 3 lagi rakan untuk mendapatkan Peti Apex dengan peluang untuk menaik taraf ke 100,000 pek Berlian dalam permainan!"
+          footerText:
+          action:
+            displayText: Jemput Rakan Lagi
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang05?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&mode=5&lang={{4}}&channel={{5}}
+    "L04": #印尼
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "🎉Selamat! Temanmu {{1}} sudah menerima undanganmu.\nKamu berhasil mengundang 6 teman dan mendapatkan Stellar Chest!\nKlaim sekarang: {{3}}\n\nUndang 3 teman lagi untuk mendapatkan Apex Chest dengan peluang meningkatkan menjadi paket 100,000 Diamond dalam game!"
+          footerText:
+          action:
+            displayText: Undang Teman Lagi
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang05?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&mode=5&lang={{4}}&channel={{5}}  # 9人助力完成信息
+  helpOverMsg3:
+    # 语言
+    "L01":
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "恭喜，你的好友{{1}}接受了你的邀请。\n你已邀请满8位好友，将随机获得Premium Joy奖池的奖励\n立即领取:{{3}}\n\n你已领完全部礼包，感谢你的参与！\n实物与现金奖励将在3月14日23:59前从符合条件的玩家中抽奖产生。官方将通过WhatsAPP帐号主动联系获奖玩家，并在活动规则页面公示。\n活动规则：https://s.moba5v5.com/YkFH5SI"
+          footerText:
+          action:
+            displayText: 分享活动信息给好友
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang01?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&mode=8&lang={{4}}&channel={{5}}
+    "L02": #英语
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "🎉Congratulations! Your friend {{1}} has accepted your invitation.\nYou've successfully invited 9 friends and earned a Moonlight Chest!\nClaim now: {{3}}\n\nInvite 3 more friends to get a Moonlight Chest with a chance to win $500 cash!"
+          footerText:
+          action:
+            displayText: Invite More Friends
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang02?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&mode=8&lang={{4}}&channel={{5}}
+    "L03": #马来
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "🎉Tahniah! Rakan anda {{1}} telah menerima jemputan anda. \nAnda telah berjaya menjemput 9 rakan dan telah memperoleh Peti Moonlight! \nTuntut sekarang: {{3}} \n\nJemput 3 lagi rakan untuk mendapatkan Peti Moonlight dengan peluang untuk memenangi wang tunai $500!"
+          footerText:
+          action:
+            displayText: Jemput Rakan Lagi
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang05?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&mode=8&lang={{4}}&channel={{5}}
+    "L04": #印尼
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "🎉Selamat! Temanmu {{1}} sudah menerima undanganmu.\nKamu berhasil mengundang 9 teman dan mendapatkan Moonlight Chest!\nKlaim sekarang: {{3}}\n\nUndang 3 teman lagi untuk mendapatkan Moonlight Chest dengan peluang memenangkan uang tunai $500!"
+          footerText:
+          action:
+            displayText: Undang Teman Lagi
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang05?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&mode=8&lang={{4}}&channel={{5}}
+
+  # 12人助力完成信息
+  helpOverMsg4:
+    # 语言
+    "L01":
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "恭喜，你的好友{{1}}接受了你的邀请。\n你已邀请满8位好友，将随机获得Premium Joy奖池的奖励\n立即领取:{{3}}\n\n你已领完全部礼包，感谢你的参与！\n实物与现金奖励将在3月14日23:59前从符合条件的玩家中抽奖产生。官方将通过WhatsAPP帐号主动联系获奖玩家，并在活动规则页面公示。\n活动规则：https://s.moba5v5.com/YkFH5SI"
+          footerText:
+          action:
+            displayText: 分享活动信息给好友
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang01?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&mode=8&lang={{4}}&channel={{5}}
+    "L02": #英语
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "🎉Congratulations! Your friend {{1}} has accepted your invitation.\nYou've successfully invited 12 friends and earned an Apex Chest!\nClaim now: {{3}}\n\nInvite 3 more friends to get a Glory Chest with a chance to win $1,000 cash!"
+          footerText:
+          action:
+            displayText: Invite More Friends
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang02?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&mode=8&lang={{4}}&channel={{5}}
+    "L03": #马来
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "🎉Tahniah! Rakan anda {{1}} telah menerima jemputan anda. \nAnda telah berjaya menjemput 12 rakan dan telah memperoleh Peti Apex! \nTuntut sekarang: {{3}} \n\nJemput 3 lagi rakan untuk mendapatkan Peti Glory dengan peluang untuk memenangi wang tunai $1,000!"
+          footerText:
+          action:
+            displayText: Jemput Rakan Lagi
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang05?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&mode=8&lang={{4}}&channel={{5}}
+    "L04": #印尼
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "🎉Selamat! Temanmu {{1}} sudah menerima undanganmu.\nKamu berhasil mengundang 12 teman dan mendapatkan Apex Chest!\nKlaim sekarang: {{3}}\n\nUndang 3 teman lagi untuk mendapatkan Glory Chest dengan peluang memenangkan uang tunai $1.000!"
+          footerText:
+          action:
+            displayText: Undang Teman Lagi
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang05?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&mode=8&lang={{4}}&channel={{5}}
+  # 15人助力完成信息
+  helpOverMsg5:
+    # 语言
+    "L01":
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "恭喜，你的好友{{1}}接受了你的邀请。\n你已邀请满8位好友，将随机获得Premium Joy奖池的奖励\n立即领取:{{3}}\n\n你已领完全部礼包，感谢你的参与！\n实物与现金奖励将在3月14日23:59前从符合条件的玩家中抽奖产生。官方将通过WhatsAPP帐号主动联系获奖玩家，并在活动规则页面公示。\n活动规则：https://s.moba5v5.com/YkFH5SI"
+          footerText:
+          action:
+            displayText: 分享活动信息给好友
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang01?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&mode=8&lang={{4}}&channel={{5}}
+    "L02": #英语
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "🎉Congratulations! Your friend {{1}} has accepted your invitation.\nYou've successfully invited 15 friends and earned a Glory Chest!\nClaim now: {{3}}\n\nYou've claimed all available rewards. Thank you for participating!\nPhysical prizes and cash rewards will be drawn from eligible players before 23:59 on 04/08. Officials will contact winners via WhatsApp, and results will be announced on the event rules page.\nEvent rules: https://s.mobilelegends.com/HCEyRYe"
+          footerText:
+          action:
+            displayText: Share with Friends
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang02?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&mode=8&lang={{4}}&channel={{5}}
+    "L03": #马来
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "🎉Tahniah! Rakan anda {{1}} telah menerima jemputan anda. \nAnda telah berjaya menjemput 15 rakan dan telah memperoleh Peti Glory! \nTuntut sekarang: {{3}} \n\nAnda telah menuntut semua ganjaran yang tersedia. Terima kasih atas penyertaan anda!\nCabutan hadiah fizikal dan ganjaran wang tunai akan dilakukan dalam kalangan pemain yang layak sebelum 23:59 pada 08/04. Pihak rasmi akan menghubungi pemenang melalui WhatsApp dan keputusan akan diumumkan di halaman peraturan acara.\nPeraturan acara: https://s.mobilelegends.com/id2tLwq"
+          footerText:
+          action:
+            displayText: Jemput Rakan Lagi
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang05?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&mode=8&lang={{4}}&channel={{5}}
+    "L04": #印尼
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "🎉Selamat! Temanmu {{1}} sudah menerima undanganmu.\nKamu berhasil mengundang 15 teman dan mendapatkan Glory Chest!\nKlaim sekarang: {{3}}\n\nKamu sudah mengklaim semua hadiah. Terima kasih atas partisipasimu!\nHadiah fisik dan uang tunai akan diundi dari player yang memenuhi syarat sebelum 08/04 pukul 23:59. Pihak resmi akan menghubungi pemenang melalui WhatsApp, dan hasilnya akan diumumkan di halaman peraturan event.\nPeraturan event: https://s.mobilelegends.com/tO82hdH"
+          footerText:
+          action:
+            displayText: Undang Teman Lagi
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang05?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&mode=8&lang={{4}}&channel={{5}}
+
+
+  # 受邀人开团消息
+  helpStartGroupMsg:
+    # 语言
+    "L01": #中文
+      "winNormal":
+        interactive:
+          type: cta_url
+          imageLink: https://mlbbmy.outweb.mobilelegends.com/1742902764505-OEVTilyBih.png
+          bodyText: "你帮好友助力成功！💪\n同时你也开启了自己的组队任务：邀请好友参与活动，可获得丰富大礼🎊\n\n🎉邀请3人：最高可获得光启皮肤、iPhone 15手机\n🎉邀请5人：必得限定头像框\n🎉邀请8人：最高可获得限定皮肤\n\n活动规则：https://s.moba5v5.com/YkFH5SI\n👇快点击下方按钮邀请好友吧！"
+          footerText:
+          action:
+            displayText: 邀请好友
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang01?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&lang={{4}}&channel={{5}}
+    "L02": #英语
+      "winNormal":
+        interactive:
+          type: cta_url
+          imageLink: https://mlbbmy.outweb.mobilelegends.com/1742902764505-OEVTilyBih.png
+          bodyText: "Help success! 💪\nYou've also unlocked your own team-up tasks: Invite specified numbers of friends for chances to win amazing rewards! 🎊\n\nPrize Pool:\n🎉1600 OPPO Phones Up for Grabs (MASSIVELY Boosted Winning Chances💥)\n🎉Up to $1,000 Cash\n🎉100,000 In-game Diamonds\n🎉Exclusive skins, and tons of items\n\nEvent Rules: https://s.mobilelegends.com/HCEyRYe\n👇Tap the button below to invite friends!"
+          footerText:
+          action:
+            displayText: Invite Friends
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang02?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&lang={{4}}&channel={{5}}
+    "L03": #马来
+      "winNormal":
+        interactive:
+          type: cta_url
+          imageLink: https://mlbbmy.outweb.mobilelegends.com/1742969574028-U0WYSvE7HC.png
+          bodyText: "Anda berjaya membantu rakan anda! 💪\nAnda juga telah membuka tugasan berpasukan anda: Jemput sejumlah rakan tertentu untuk berpeluang memenangi ganjaran hebat! 🎊\n\nHadiah Terkumpul:\n🎉1,600 Telefon OPPO Untuk Dimenangi (Peluang Menang BANYAK Ditingkatkan💥)\n🎉Wang Tunai Sehingga $1,000\n🎉Sehingga 100,000 Berlian dalam permainan\n🎉Skin eksklusif dan item yang lumayan\n\nPeraturan Acara: https://s.mobilelegends.com/id2tLwq\n👇Tekan butang di bawah untuk menjemput rakan anda!"
+          footerText:
+          action:
+            displayText: Jemput Rakan
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang05?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&lang={{4}}&channel={{5}}
+    "L04": #印尼
+      "winNormal":
+        interactive:
+          type: cta_url
+          imageLink: https://mlbbmy.outweb.mobilelegends.com/1742969572218-PGZqfoNmqy.png
+          bodyText: "Bantuan berhasil! 💪\nKamu juga sudah membuka quest main bersama: Undang teman dalam jumlah tertentu untuk berpeluang memenangkan hadiah keren! 🎊\n\nPrize Pool:\n🎉1,600 Telefon OPPO Untuk Dimenangi (Peluang Menang BANYAK Ditingkatkan💥)\n🎉Wang Tunai Sehingga $1,000\n🎉Hingga 100.000 Diamond dalam Game\n🎉Skin eksklusif, dan item melimpah\n\nPeraturan Event: https://s.mobilelegends.com/tO82hdH\n👇Ketuk tombol di bawah untuk mengundang teman!"
+          footerText:
+          action:
+            displayText: Undang Teman
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang05?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&lang={{4}}&channel={{5}}
+
+
+  # 催促成团消息
+  promoteClusteringMsg:
+    # 语言
+    "L01":
+      "winNormal":
+        interactive:
+          type: cta_url
+          imageLink: https://mlbbmy.outweb.mobilelegends.com/1740140231870-VV1Kvqyf3M.png
+          bodyText: "【活动提醒】还差一点点，就能赢取限量奖励！\n🔥活动火爆，奖励所剩不多，赶紧邀请好友赢奖励吧！"
+          footerText:
+          action:
+            displayText: 邀请好友
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang01?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&lang={{4}}&channel={{5}}
+    "L02":
+      "winNormal":
+        interactive:
+          type: cta_url
+          imageLink: https://mlbbmy.outweb.mobilelegends.com/1740140231870-VV1Kvqyf3M.png
+          bodyText: "【Event Reminder】You’re just one step away from getting amazing rewards!\n🔥Hurry! Limited rewards remaining. Invite friends now to claim your rewards!"
+          footerText:
+          action:
+            displayText: Invite Friends
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang02?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&lang={{4}}&channel={{5}}
+    "L03":
+      "winNormal":
+        interactive:
+          type: cta_url
+          imageLink: https://mlbbmy.outweb.mobilelegends.com/1740140207974-j65wZSpRqF.png
+          bodyText: "[Peringatan Acara] Anda semakin hampir untuk mendapatkan ganjaran hebat!\n🔥Cepat! Ganjaran yang tinggal adalah terhad. Jemput rakan sekarang untuk menuntut ganjaran anda!"
+          footerText:
+          action:
+            displayText: Jemput Rakan
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang05?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&lang={{4}}&channel={{5}}
+    "L04":
+      "winNormal":
+        interactive:
+          type: cta_url
+          imageLink: https://mlbbmy.outweb.mobilelegends.com/1740140249385-ql2YkNAoFF.png
+          bodyText: "【Pengingat Event】Tinggal selangkah lagi dan kamu bisa mendapatkan hadiah keren!\n🔥Cepat! Hadiahnya terbatas. Undang teman sekarang untuk mengklaim hadiahmu!"
+          footerText:
+          action:
+            displayText: Undang Teman
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang05?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&lang={{4}}&channel={{5}}
+
+  #免费续时
+  renewFreeMsg:
+    # 语言
+    "L01":
+      "winNormal":
+        interactive:
+          type: button
+          imageLink: https://mlbbmy.outweb.mobilelegends.com/1740140231870-VV1Kvqyf3M.png
+          bodyText: "【重要通知】由于您长时间没有活动进度，即将收不到[MOBA5v5：Legends Together]的消息推送。\n\n为避免获取不到奖励，请尽快续订活动消息。"
+          action:
+            buttons:
+              - type: reply
+                reply:
+                  id: "1"
+                  title: 续订活动消息
+    "L02": #英语
+      "winNormal":
+        interactive:
+          type: button
+          imageLink: https://mlbbmy.outweb.mobilelegends.com/1740140231870-VV1Kvqyf3M.png
+          bodyText: "[Important Notice] Due to prolonged inactivity, you will soon stop receiving message notifications for [MLBB Team-up Event].\n\nTo avoid missing rewards, please renew your event subscription soon."
+          action:
+            buttons:
+              - type: reply
+                reply:
+                  id: "1"
+                  title: Resubscribe
+    "L03": #马来
+      "winNormal":
+        interactive:
+          type: button
+          imageLink: https://mlbbmy.outweb.mobilelegends.com/1740140207974-j65wZSpRqF.png
+          bodyText: "[Notis Penting] Oleh kerana anda tidak aktif untuk masa yang lama, anda tidak lagi akan menerima mesej notifikasi untuk [Acara Berpasukan MLBB].\n\nSila perbaharui langganan acara anda segera supaya tidak terlepas peluang untuk mendapatkan ganjaran."
+          action:
+            buttons:
+              - type: reply
+                reply:
+                  id: "1"
+                  title: Langgan semula
+    "L04": #马来
+      "winNormal":
+        interactive:
+          type: button
+          imageLink: https://mlbbmy.outweb.mobilelegends.com/1740140249385-ql2YkNAoFF.png
+          bodyText: "[Pemberitahuan Penting] Karena tidak aktif terlalu lama, kamu akan segera berhenti menerima notifikasi pesan [Event Main Bersama MLBB].\n\nUntuk menghindari kehilangan hadiah, harap segera perbarui langganan event kamu."
+          action:
+            buttons:
+              - type: reply
+                reply:
+                  id: "1"
+                  title: Berlangganan lagi
+
+
+  # 续订回复信息
+  renewFreeReplyMsg:
+    # 语言
+    "L01":
+      "winNormal":
+        interactive:
+          type: cta_url
+          imageLink: https://mlbbmy.outweb.mobilelegends.com/1742902764505-OEVTilyBih.png
+          bodyText: "赶快邀请你的好友来MOBA5v5一起战斗，限定头像框、iPhone手机，诸多大奖等你拿！\n\n🎉邀请3人：最高可获得光启皮肤、iPhone 15手机\n🎉邀请5人：必得限定头像框\n🎉邀请8人：最高可获得限定皮肤\n\n活动规则：https://s.moba5v5.com/YkFH5SI\n👇快点击下方按钮邀请好友吧！"
+          footerText:
+          action:
+            displayText: 邀请好友
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang01?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&lang={{4}}&channel={{5}}
+    "L02":
+      "winNormal":
+        interactive:
+          type: cta_url
+          imageLink: https://mlbbmy.outweb.mobilelegends.com/1742902764505-OEVTilyBih.png
+          bodyText: "Keep inviting friends for even more exciting rewards!\n\nPrize Pool:\n🎉1600 OPPO Phones Up for Grabs (MASSIVELY Boosted Winning Chances💥)\n🎉Up to $1,000 Cash\n🎉100,000 In-game Diamonds\n🎉Exclusive skins, and tons of items\n\n👇Tap the button below to invite friends!"
+          footerText:
+          action:
+            displayText: Invite Friends
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang02?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&lang={{4}}&channel={{5}}
+    "L03":
+      "winNormal":
+        interactive:
+          type: cta_url
+          imageLink: https://mlbbmy.outweb.mobilelegends.com/1742969574028-U0WYSvE7HC.png
+          bodyText: "Terus menjemput rakan anda untuk mendapatkan lebih banyak ganjaran menarik! \n\nHadiah Terkumpul:\n🎉1,600 Telefon OPPO Untuk Dimenangi (Peluang Menang BANYAK Ditingkatkan💥)\n🎉Wang Tunai Sehingga $1,000\n🎉Sehingga 100,000 Berlian dalam permainan\n🎉Skin eksklusif dan item yang lumayan\n\n👇Tekan butang di bawah untuk menjemput rakan anda!"
+          footerText:
+          action:
+            displayText: Jemput Rakan
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang05?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&lang={{4}}&channel={{5}}
+    "L04":
+      "winNormal":
+        interactive:
+          type: cta_url
+          imageLink: https://mlbbmy.outweb.mobilelegends.com/1742969572218-PGZqfoNmqy.png
+          bodyText: "Terus undang teman untuk hadiah yang lebih menarik!\n\nPrize Pool:\n🎉1.600 HP OPPO Siap Dimenangkan (Peluang Menang Meningkat DRASTIS💥)\n🎉Hadiah Uang Tunai Hingga $1.000\n🎉Hingga 100.000 Diamond dalam Game\n🎉 Skin eksklusif dan item melimpah\n\n👇Ketuk tombol di bawah untuk mengundang teman!"
+          footerText:
+          action:
+            displayText: Undang Teman
+            shortLink: https://play.moba5v5.com/events/moba2025wa/invite/invitationlang05?code={{1}}&gpt=8&waName={{2}}&helpTextId={{3}}&lang={{4}}&channel={{5}}
+
+
+  # 免费CDK消息
+  freeCdkMsg:
+    "L01": #语言
+      "winNormal":
+        interactive:
+          type: cta_url
+          imageLink: https://mlbbmy.outweb.mobilelegends.com/1740140231644-NWe875zNNe.png
+          bodyText: "恭喜你，触发幸运红包！有概率获得限定皮肤等奖励，赶紧去打开试试吧！"
+          footerText:
+          action:
+            displayText: 立刻开启
+            shortLink: https://play.moba5v5.com/events/moba2025wa/promotion/?gpt=1&lp=1&mode=1&cdk={{1}}&lang={{2}}&channel={{3}}&code={{4}}
+    "L02": #英语
+      "winNormal":
+        interactive:
+          type: cta_url
+          imageLink: https://mlbbmy.outweb.mobilelegends.com/1740140231644-NWe875zNNe.png
+          bodyText: "Congratulations! You've triggered a Lucky Chest! 🎉\nYou have a chance to win $200 cash and an exclusive skin!\n\nDuring GOLDEN MONTH, one OPPO Phone will be given away every day in-game during specific times! Try your luck! 🎁🎁🎁"
+          footerText:
+          action:
+            displayText: Go Now
+            shortLink: https://play.moba5v5.com/events/moba2025wa/promotion/?gpt=1&lp=1&mode=1&cdk={{1}}&lang={{2}}&channel={{3}}&code={{4}}
+    "L03": #马来
+      "winNormal":
+        interactive:
+          type: cta_url
+          imageLink: https://mlbbmy.outweb.mobilelegends.com/1740140207695-mFAugeDbVI.png
+          bodyText: "Tahniah! Anda telah mencetuskan Peti Lucky! 🎉\nAnda berpeluang memenangi wang tunai $200 dan skin eksklusif! \n\nSepanjang acara GOLDEN MONTH, satu Telefon OPPO akan diberikan setiap hari dalam permainan pada masa tertentu! Cuba nasib anda! 🎁🎁🎁"
+          footerText:
+          action:
+            displayText: Pergi Sekarang
+            shortLink: https://play.moba5v5.com/events/moba2025wa/promotion/?gpt=1&lp=1&mode=1&cdk={{1}}&lang={{2}}&channel={{3}}&code={{4}}
+    "L04": #印尼
+      "winNormal":
+        interactive:
+          type: cta_url
+          imageLink: https://mlbbmy.outweb.mobilelegends.com/1740140249107-zY3O3H3jWH.png
+          bodyText: "Selamat! Kamu mengaktifkan Lucky Chest! 🎉\nKamu berkesempatan memenangkan uang tunai $200 dan skin eksklusif!\n\nSelama GOLDEN MONTH, satu HP OPPO akan diberikan setiap hari dalam game dalam waktu tertentu! Coba keberuntunganmu! 🎁🎁🎁"
+          footerText:
+          action:
+            displayText: Pergi Sekarang
+            shortLink: https://play.moba5v5.com/events/moba2025wa/promotion/?gpt=1&lp=1&mode=1&cdk={{1}}&lang={{2}}&channel={{3}}&code={{4}}
+
+  # 重复助力
+  repeatHelpMsg:
+    # 语言
+    "L01":
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "❤️每个人只有一次帮他人助力机会，你已经帮{{1}}助力过，助力次数已消耗完，无法再帮他人助力。\n如有疑问，请查看活动规则。"
+          action:
+            displayText: 查看活动规则
+            url: https://s.moba5v5.com/YkFH5SI
+    "L02":
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "You can only help one person, and you’ve already helped {{1}}. Your helping chance has been used up.\nPlease check the event rules if you have any questions."
+          action:
+            displayText: View Event Rules
+            url: https://s.mobilelegends.com/HCEyRYe
+    "L03":
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "Anda hanya boleh membantu satu rakan dan anda telah pun membantu {{1}}. Peluang untuk anda membantu telah digunakan. \nSila semak peraturan acara jika anda mempunyai sebarang pertanyaan."
+          action:
+            displayText: Lihat Peraturan #Lihat Peraturan Acara TODO 超长
+            url: https://s.mobilelegends.com/id2tLwq
+    "L04":
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "Kamu hanya bisa membantu satu orang, dan kamu sudah membantu {{1}}. Kesempatan membantumu sudah digunakan.\nHarap cek peraturan event jika kamu punya pertanyaan."
+          action:
+            displayText: Lihat Peraturan # TODO 超长
+            url: https://s.mobilelegends.com/tO82hdH
+  # 不能为自己助力 todo 新增
+  CanNotHelpOneselfMsg:
+    # 语言
+    "L01":
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "你无法为自己助力。如有疑问，请查看活动规则。"
+          action:
+            displayText: 查看活动规则
+            url: https://s.moba5v5.com/YkFH5SI
+    "L02":
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "You cannot help yourself. Please check the event rules if you have any questions."
+          action:
+            displayText: View Event Rules
+            url: https://s.mobilelegends.com/HCEyRYe
+    "L03":
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "Anda tidak boleh membantu diri sendiri. Sila semak peraturan acara jika anda mempunyai sebarang pertanyaan."
+          action:
+            displayText: Lihat Peraturan #Lihat Peraturan Acara TODO 超长
+            url: https://s.mobilelegends.com/id2tLwq
+    "L04":
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "Kamu tidak bisa membantu dirimu sendiri. Harap cek peraturan event jika kamu punya pertanyaan."
+          action:
+            displayText: Lihat Peraturan # TODO 超长
+            url: https://s.mobilelegends.com/tO82hdH
+  # 非白国码-不能参与活动消息
+  cannotAttendActivityMsg:
+    # 语言
+    "L01":
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "抱歉，该活动仅限印度地区WhatsApp号码的用户参与，您当前不符合参与条件。如有疑问，请阅读活动规则。"
+          action:
+            displayText: 查看活动规则
+            url: https://s.moba5v5.com/YkFH5SI
+    "L02":
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "Sorry, this event is only available to players with WhatsApp numbers from Malaysia, Indonesia, Philippines and Singapore. You are currently not eligible to participate.\nPlease check the event rules if you have any questions."
+          action:
+            displayText: View Event Rules
+            url: https://s.mobilelegends.com/HCEyRYe
+    "L03": #马来
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "Maaf, acara ini hanya tersedia untuk pemain yang mempunyai nombor WhatsApp dari Malaysia, Indonesia, Filipina dan Singapura. Anda tidak layak untuk menyertai buat masa ini. \nSila semak peraturan acara jika anda mempunyai sebarang pertanyaan."
+          action:
+            displayText: Lihat Peraturan #Lihat Peraturan Acara TODO 超长
+            url: https://s.mobilelegends.com/id2tLwq
+    "L04": #印尼语
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "Maaf, event ini hanya tersedia untuk player dengan nomor WhatsApp dari Malaysia, Indonesia, Filipina, dan Singapura. Saat ini kamu tidak memenuhi syarat untuk berpartisipasi.\nHarap cek peraturan event jika kamu punya pertanyaan."
+          action:
+            displayText: Lihat Peraturan # TODO 超长
+            url: https://s.mobilelegends.com/tO82hdH
+  # 缓冲期-主态不能开团消息
+  founderCanNotStartGroupMsg:
+    # 语言
+    "L01":
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "由于活动过于火爆，奖励名额已达上限。您暂时无法发起组队参与活动，抱歉。\n如有疑问，请阅读活动规则。"
+          action:
+            displayText: 查看活动规则
+            url: https://s.moba5v5.com/YkFH5SI
+    "L02": #英语
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "Due to overwhelming demand, all event reward quotas have been filled. You are temporarily unable to start a team-up for this event. We apologize for any inconvenience.\nPlease check the event rules if you have any questions."
+          action:
+            displayText: View Event Rules
+            url: https://s.mobilelegends.com/HCEyRYe
+    "L03": #马来
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "Disebabkan permintaan yang tinggi, semua kuota ganjaran acara telah penuh. Anda tidak boleh berpasukan untuk acara ini buat sementara waktu. Kami mohon maaf atas sebarang kesulitan. \nSila semak peraturan acara jika anda mempunyai sebarang pertanyaan."
+          action:
+            displayText: Lihat Peraturan #Lihat Peraturan Acara TODO 超长
+            url: https://s.mobilelegends.com/id2tLwq
+    "L04": #印尼
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "Karena permintaan yang tinggi, semua kuota hadiah event sudah habis. Kamu tidak bisa membentuk tim untuk event ini selama sementara waktu. Kami memohon maaf atas ketidaknyamanan yang terjadi.\nHarap cek peraturan event jika kamu punya pertanyaan."
+          action:
+            displayText: Lihat Peraturan # TODO 超长
+            url: https://s.mobilelegends.com/tO82hdH
+
+  # 缓冲期-客态不能开团消息
+  canNotStartGroupMsg:
+    # 语言
+    "L01":
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "🎉恭喜你为好友成功助力！\n\n由于活动过于火爆，奖励名额已达上限。您暂时无法发起组队参与活动，抱歉。\n如有疑问，请阅读活动规则。"
+          action:
+            displayText: 查看活动规则
+            url: https://s.moba5v5.com/YkFH5SI
+    "L02": #英语
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "Congratulations! You've successfully helped your friend!\n\nDue to overwhelming demand, all event reward quotas have been filled. You are temporarily unable to start a team-up for this event. We apologize for any inconvenience.\nPlease check the event rules if you have any questions."
+          action:
+            displayText: View Event Rules
+            url: https://s.mobilelegends.com/HCEyRYe
+    "L03": #马来
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "Tahniah! Anda telah berjaya membantu rakan anda! \n\nDisebabkan permintaan yang tinggi, semua kuota ganjaran acara telah penuh. Anda tidak boleh berpasukan untuk acara ini buat sementara waktu. Kami mohon maaf atas sebarang kesulitan. \nSila semak peraturan acara jika anda mempunyai sebarang pertanyaan."
+          action:
+            displayText: Lihat Peraturan #Lihat Peraturan Acara TODO 超长
+            url: https://s.mobilelegends.com/id2tLwq
+    "L04": #印尼
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "Selamat! Kamu berhasil membantu temanmu!\n\nKarena permintaan yang tinggi, semua kuota hadiah event sudah habis. Kamu tidak bisa membentuk tim untuk event ini selama sementara waktu. Kami memohon maaf atas ketidaknyamanan yang terjadi.\nHarap cek peraturan event jika kamu punya pertanyaan."
+          action:
+            displayText: Lihat Peraturan # TODO 超长
+            url: https://s.mobilelegends.com/tO82hdH
+
+  # 结束期-不能开团消息
+  endCanNotStartGroupMsg:
+    # 语言
+    "L01":
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "⭐活动已结束，感谢你的关注！\n现金、实物获奖名单将在3月14日公布在活动规则页面。\n如有疑问，请阅读活动规则。"
+          action:
+            displayText: 查看活动规则
+            url: https://s.moba5v5.com/YkFH5SI
+    "L02":
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "The event has ended. Thank you for your participation!\nWinners of cash and physical prizes will be announced on 04/09 on the event rules page.\nPlease check the event rules if you have any questions."
+          action:
+            displayText: View Event Rules
+            url: https://s.mobilelegends.com/HCEyRYe
+    "L03":
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "Acara telah tamat. Terima kasih atas penyertaan anda! \nPemenang hadiah fizikal dan wang tunai akan diumumkan pada 09/04 di halaman peraturan acara. \nSila semak peraturan acara jika anda mempunyai sebarang pertanyaan."
+          action:
+            displayText: Lihat Peraturan #Lihat Peraturan Acara TODO 超长
+            url: https://s.mobilelegends.com/id2tLwq
+    "L04":
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "Event sudah berakhir. Terima kasih atas partisipasimu!\nPemenang uang tunai dan hadiah fisik akan diumumkan pada 09/04 di halaman peraturan event.\nHarap cek peraturan event jika kamu punya pertanyaan."
+          action:
+            displayText: Lihat Peraturan # TODO 超长
+            url: https://s.mobilelegends.com/tO82hdH
+
+  # 结束期-不能助力消息
+  endCanNotHelpMsg:
+    # 语言
+    "L01":
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "⭐活动已结束，感谢你的关注！\n现金、实物获奖名单将在3月14日公布在活动规则页面。\n如有疑问，请阅读活动规则。"
+          action:
+            displayText: 查看活动规则
+            url: https://s.moba5v5.com/YkFH5SI
+    "L02":
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "The event has ended. Thank you for your participation!\nWinners of cash and physical prizes will be announced on 04/09 on the event rules page.\nPlease check the event rules if you have any questions."
+          action:
+            displayText: View Event Rules
+            url: https://s.mobilelegends.com/HCEyRYe
+    "L03":
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "Acara telah tamat. Terima kasih atas penyertaan anda! \nPemenang hadiah fizikal dan wang tunai akan diumumkan pada 09/04 di halaman peraturan acara. \nSila semak peraturan acara jika anda mempunyai sebarang pertanyaan."
+          action:
+            displayText: Lihat Peraturan #Lihat Peraturan Acara TODO 超长
+            url: https://s.mobilelegends.com/id2tLwq
+    "L04":
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "Event sudah berakhir. Terima kasih atas partisipasimu!\nPemenang uang tunai dan hadiah fisik akan diumumkan pada 09/04 di halaman peraturan event.\nHarap cek peraturan event jika kamu punya pertanyaan."
+          action:
+            displayText: Lihat Peraturan # TODO 超长
+            url: https://s.mobilelegends.com/tO82hdH
+
+
+  # 切换语言
+  switchLangMsg:
+    # 语言
+    "L01":
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "你的活动语言成功切换为中文\n接下来的活动消息将通过中文为你推送。"
+          action:
+            displayText: 查看活动规则
+            url: https://s.moba5v5.com/YkFH5SI
+    "L02":
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "Your event language has been successfully switched to [English]"
+          action:
+            displayText: View Event Rules
+            url: https://s.mobilelegends.com/HCEyRYe
+    "L03":
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "Bahasa acara anda telah berjaya ditukar ke [Bahasa Melayu]"
+          action:
+            displayText: Lihat Peraturan #Lihat Peraturan Acara TODO 超长
+            url: https://s.mobilelegends.com/id2tLwq
+    "L04":
+      "winNormal":
+        interactive:
+          type: cta_url
+          bodyText: "Bahasa event berhasil diubah menjadi [Bahasa Indonesia]"
+          action:
+            displayText: Lihat Peraturan # TODO 超长
+            url: https://s.mobilelegends.com/tO82hdH
+
+
+#适用于预约
+  # 参与活动消息
+  activityTaskMsg: #todo 031不使用
+    # 语言
+    "L01":
+      "winNormal":
+        interactive:
+          type: cta_url
+          imageLink: https://mlbbmy.outweb.mobilelegends.com/1738304092908-V7lnWrYlZx.png
+          bodyText: "前往应用商店预约Magic Chess: Go Go (MCGG)，即可获得MLBB外观！🎉\n邀请好友组队预约，还有机会🎁抽取现金、手机大奖！\n\n⭐请您先预约新游，之后再邀请好友助力。\n活动规则：https://s.moba5v5.com/YkFH5SI\n\n👇点击下方按钮，前往商店预约！"
+          footerText:
+          action:
+            displayText: 前往商店预约
+            url: https://play.moba5v5.com/events/moba2025wa/promotion/?code={{1}}&gpt=1&lang={{2}}&channel={{3}}
+    "L02":
+      "winNormal":
+        interactive:
+          type: cta_url
+          imageLink: https://mlbbmy.outweb.mobilelegends.com/1738304092908-V7lnWrYlZx.png
+          bodyText: "Pre-register MCGG (Magic Chess: Go Go) in your app store to get an MLBB pack and a chance to win a permanent Skin! 🎉\nInvite your friends to pre-register together for a chance to win 🎁 cash prizes and phones!\n\n⭐Make sure to pre-register first, then invite your friends to assist you.\nEvent Guide: https://s.mobilelegends.com/HCEyRYe\n\n👇Tap the button below to pre-register in the store!"
+          footerText:
+          action:
+            displayText: Pre-Register Now
+            url: https://play.moba5v5.com/events/moba2025wa/promotion/?code={{1}}&gpt=1&lang={{2}}&channel={{3}}
+    "L03":
+      "winNormal":
+        interactive:
+          type: cta_url
+          imageLink: https://mlbbmy.outweb.mobilelegends.com/1738304066226-GKVBIs6QFJ.png
+          bodyText: "Praregistrasi MCGG (Magic Chess: Go Go) di toko aplikasi kamu buat dapatin MLBB Pack dan berkesempatan menangin Skin permanen! 🎉\nदोस्तों को आमंत्रित करें buat praregistrasi bersama dan raih kesempatan mendapat 🎁 hadiah uang tunai & HP!\n\n⭐Yuk praregistrasi dulu, lalu दोस्तों को आमंत्रित करें untuk membantu.\nPanduan Event: https://s.mobilelegends.com/id2tLwq\n\n👇Klik tombol di bawah buat praregistrasi di toko aplikasimu!"
+          footerText:
+          action:
+            displayText: Praregistrasi
+            url: https://play.moba5v5.com/events/moba2025wa/promotion/?code={{1}}&gpt=1&lang={{2}}&channel={{3}}
+  # 单人开始助力信息 todo 用不上
+  helpTaskSingleStartMsg:
+    # 语言
+    "L01":
+      "winNormal":
+        interactive:
+          type: cta_url
+          imageLink: https://mlbbmy.outweb.mobilelegends.com/1738304092908-V7lnWrYlZx.png
+          bodyText: "👏还差一步！点击前往预约，即可帮他助力！\n帮他助力后，你将可自己开团组队，赢取大奖！"
+          footerText:
+          action:
+            displayText: 前往商店预约
+            url: https://play.moba5v5.com/events/moba2025wa/promotion/?code={{1}}&gpt=1&lang={{2}}&channel={{3}}
+    "L02":
+      "winNormal":
+        interactive:
+          type: cta_url
+          imageLink: https://mlbbmy.outweb.mobilelegends.com/1738304092908-V7lnWrYlZx.png
+          bodyText: "👏Just one more step! Tap to pre-register and assist them!\nAfter that, you can form your own team and win grand prizes!"
+          footerText:
+          action:
+            displayText: Pre-Register Now
+            url: https://play.moba5v5.com/events/moba2025wa/promotion/?code={{1}}&gpt=1&lang={{2}}&channel={{3}}
+    "L03":
+      "winNormal":
+        interactive:
+          type: cta_url
+          imageLink: https://mlbbmy.outweb.mobilelegends.com/1738304066226-GKVBIs6QFJ.png
+          bodyText: "👏Tinggal 1 langkah lagi! Klik buat praregistrasi dan bantu temanmu!\nSetelah itu, kamu bisa bikin tim sendiri dan menangin hadiah utama!"
+          footerText:
+          action:
+            displayText: Praregistrasi
+            url: https://play.moba5v5.com/events/moba2025wa/promotion/?code={{1}}&gpt=1&lang={{2}}&channel={{3}}
+  # 付费-续免费信息 todo moba不使用
+  payRenewFreeMsg:
+    # 语言
+    "L01":
+      "winNormal":
+        interactive:
+          type: button
+          bodyText: "【重要通知】奖励即将发完！\n\nMLBB：Teguh Bersama²  ]奖励库存所剩不多，你还差一点点即可获得下一档奖励，是否继续参与活动？"
+          action:
+            buttons:
+              - type: reply
+                reply:
+                  id: "1"
+                  title: 继续参与活动
+        template:
+          name: moba2025wa_recall_zhcn
+          language:
+            code: zh_CN
+          components:
+            - type: header
+              parameters:
+                - type: image
+                  image:
+                    id: "1645149076215261"
+      "winHoliday":
+        interactive:
+          type: button
+          bodyText: "【重要通知】奖励即将发完！\n\nMLBB：Teguh Bersama²  ]奖励库存所剩不多，你还差一点点即可获得下一档奖励，是否继续参与活动？"
+          action:
+            buttons:
+              - type: reply
+                reply:
+                  id: "1"
+                  title: 继续参与活动
+        template:
+          name: moba2025wa_recall_zhcn
+          language:
+            code: zh_CN
+          components:
+            - type: header
+              parameters:
+                - type: image
+                  image:
+                    id: "1645149076215261"
+      "notWin":
+        interactive:
+          type: button
+          bodyText: "【重要通知】奖励即将发完！\n\nMLBB：Teguh Bersama²  ]奖励库存所剩不多，你还差一点点即可获得下一档奖励，是否继续参与活动？"
+          action:
+            buttons:
+              - type: reply
+                reply:
+                  id: "1"
+                  title: 继续参与活动
+        template:
+          name: moba2025wa_recall_zhcn
+          language:
+            code: zh_CN
+          components:
+            - type: header
+              parameters:
+                - type: image
+                  image:
+                    id: "1645149076215261"
+    "L02": #英语
+      "winNormal":
+        interactive:
+          type: button
+          bodyText: "[Important Notice] The reward is about to run out !\n\n[MLBB：Teguh Bersama²  ] There is not much rewards left, and you are just a little bit away to get the next reward. Do you want to continue to participate in the event?"
+          action:
+            buttons:
+              - type: reply
+                reply:
+                  id: "1"
+                  title: Resubscribe
+        template:
+          name: moba2025wa_recall_en
+          language:
+            code: en
+          components:
+            - type: header
+              parameters:
+                - type: image
+                  image:
+                    id: "546914904830441"
+      "winHoliday":
+        interactive:
+          type: button
+          bodyText: "[Important Notice] The reward is about to run out !\n\n[MLBB：Teguh Bersama²  ] There is not much rewards left, and you are just a little bit away to get the next reward. Do you want to continue to participate in the event?"
+          action:
+            buttons:
+              - type: reply
+                reply:
+                  id: "1"
+                  title: Resubscribe
+        template:
+          name: moba2025wa_recall_en
+          language:
+            code: en
+          components:
+            - type: header
+              parameters:
+                - type: image
+                  image:
+                    id: "546914904830441"
+      "notWin":
+        interactive:
+          type: button
+          bodyText: "[Important Notice] The reward is about to run out !\n\n[MLBB：Teguh Bersama²  ] There is not much rewards left, and you are just a little bit away to get the next reward. Do you want to continue to participate in the event?"
+          action:
+            buttons:
+              - type: reply
+                reply:
+                  id: "1"
+                  title: Resubscribe
+        template:
+          name: moba2025wa_recall_en
+          language:
+            code: en
+          components:
+            - type: header
+              parameters:
+                - type: image
+                  image:
+                    id: "546914904830441"
+    "L03": #马来
+      "winNormal":
+        interactive:
+          type: button
+          bodyText: "[Notis Penting] Ganjaran Hampir Habis!\n\n[MLBB: Teguh Bersama²] Ganjaran semakin berkurang, dan anda hanya selangkah lagi untuk mendapatkan ganjaran seterusnya. \n\nAdakah anda mahu terus sertai acara ini?"
+          action:
+            buttons:
+              - type: reply
+                reply:
+                  id: "1"
+                  title: Teruskan Sertai
+        template:
+          name: moba2025wa_recall_bm
+          language:
+            code: ml
+          components:
+            - type: header
+              parameters:
+                - type: image
+                  image:
+                    id: "552480161004313"
+      "winHoliday":
+        interactive:
+          type: button
+          bodyText: "[Notis Penting] Ganjaran Hampir Habis!\n\n[MLBB: Teguh Bersama²] Ganjaran semakin berkurang, dan anda hanya selangkah lagi untuk mendapatkan ganjaran seterusnya. \n\nAdakah anda mahu terus sertai acara ini?"
+          action:
+            buttons:
+              - type: reply
+                reply:
+                  id: "1"
+                  title: Teruskan Sertai
+        template:
+          name: moba2025wa_recall_bm
+          language:
+            code: ml
+          components:
+            - type: header
+              parameters:
+                - type: image
+                  image:
+                    id: "552480161004313"
+      "notWin":
+        interactive:
+          type: button
+          bodyText: "[Notis Penting] Ganjaran Hampir Habis!\n\n[MLBB: Teguh Bersama²] Ganjaran semakin berkurang, dan anda hanya selangkah lagi untuk mendapatkan ganjaran seterusnya. \n\nAdakah anda mahu terus sertai acara ini?"
+          action:
+            buttons:
+              - type: reply
+                reply:
+                  id: "1"
+                  title: Teruskan Sertai
+        template:
+          name: moba2025wa_recall_bm
+          language:
+            code: ml
+          components:
+            - type: header
+              parameters:
+                - type: image
+                  image:
+                    id: "552480161004313"

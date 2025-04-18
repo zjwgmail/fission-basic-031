@@ -1,0 +1,59 @@
+syntax = "proto3";
+
+package helloworld.v1;
+
+import "google/api/annotations.proto";
+
+option go_package = "fission-basic/api/helloworld/v1;v1";
+
+service HelpCode {
+  rpc PreheatHelpCode(PreheatHelpCodeRequest) returns (PreheatHelpCodeResponse)  {
+    option (google.api.http) = {
+      post: "/events/mlbb25031job/activity/helpCode/preHeat"
+      body: "*"
+    };
+  }
+  rpc RepairHelpCode(RepairHelpCodeRequest) returns (RepairHelpCodeResponse) {
+    option (google.api.http) = {
+      post: "/events/mlbb25031job/activity/helpCode/repair"
+      body: "*"
+    };
+  }
+  rpc HCTest(HCTestRequest) returns (HCTestResponse) {
+    option (google.api.http) = {
+      get: "/events/mlbb25031job/activity/helpCode/test"
+    };
+  }
+  rpc GetActivityInfo(GetActivityInfoRequest) returns (GetActivityInfoResponse) {
+    option (google.api.http) = {
+      get: "/events/mlbb25031job/activity/getactivityinfo"
+    };
+  }
+}
+
+message GetActivityInfoRequest {
+
+}
+
+message GetActivityInfoResponse {
+
+}
+
+message PreheatHelpCodeRequest {
+  int32 count = 1;
+  bool cleanRedis = 2;
+}
+message PreheatHelpCodeResponse {
+}
+
+message RepairHelpCodeRequest {
+  int64 minId = 1;
+  int64 maxId = 2;
+}
+message RepairHelpCodeResponse {
+}
+
+message HCTestRequest{
+}
+message HCTestResponse{
+}

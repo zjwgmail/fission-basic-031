@@ -1,0 +1,315 @@
+syntax = "proto3";
+package kratos.api;
+
+option go_package = "fission-basic/internal/conf;conf";
+
+import "google/protobuf/duration.proto";
+
+message Bootstrap {
+  Server server = 1;
+  Data data = 2;
+  Business business = 3;
+  map<string, MsgLanguageInfo> MsgMap = 4;
+}
+
+message Server {
+  message HTTP {
+    string network = 1;
+    string addr = 2;
+    google.protobuf.Duration timeout = 3;
+  }
+  message GRPC {
+    string network = 1;
+    string addr = 2;
+    google.protobuf.Duration timeout = 3;
+  }
+  HTTP http = 1;
+  GRPC grpc = 2;
+  HTTP job_http = 3;
+  HTTP consumer_http = 4;
+  HTTP static_http = 5;
+}
+
+message Data {
+  message Database {
+    string driver = 1;
+    string source = 2;
+    int64 max_idle = 3;
+    int64 max_open = 4;
+
+  }
+  message Redis {
+    string network = 1;
+    string addr = 2;
+    string password = 3;
+    int64 max_open = 4;
+    int64 pool_size = 5;
+    int64 min_idle_conns = 6;
+    google.protobuf.Duration read_timeout = 7;
+    google.protobuf.Duration write_timeout = 8;
+  }
+  message Cron{
+    bool enable = 1;
+    string spec = 2; // * * * * * 分别对应分、时、天、周、月 
+  }
+  message CronTask {
+    Cron resend_retry_msg = 1;
+    Cron resend_msg = 2;
+    Cron official_queue_monitor = 3;
+    Cron unofficial_queue_monitor = 4;
+    Cron renew_queue_monitor = 5;
+    Cron call_msg_queue_monitor = 6;
+    Cron email_report_utc8_task = 7;
+    Cron email_report_utc0_task = 8;
+    Cron email_report_utc_minus8_task = 9;
+    Cron retry_official_msg = 10;
+    Cron retry_unofficial_msg = 11;
+    Cron retry_receipt_msg_record = 12;
+    Cron activity_task = 13;
+    Cron feishu_report_task = 14;
+    // 消息提醒
+    Cron user_remind_free_cdk = 15;
+    Cron user_remind_v22 = 16;
+    Cron user_remind_v3 = 17;
+    Cron push_event1_send = 18;
+    Cron push_event2_send = 19;
+    Cron push_event3_send = 20;
+    Cron push_event4_send = 21;
+    Cron gw_queue_monitor = 22;
+  }
+  message Queue {
+    string official_key = 1;
+    string unofficial_key = 2;
+    string renew_msg = 3; // 续免费
+    string call_msg = 4; // 回执消息
+    string repeat_help_key = 5; // 重复助力
+    string gw = 6;
+    string gw_recall = 7;
+    string gw_unknown = 8;
+  }
+  message Feishu {
+    string webhook = 1;
+    string develop_webhook = 2;
+  }
+  message JoinGroup {
+    int32 max_num = 1; // 最大助力次数
+  }
+  message Nx {
+    string ak = 1;
+    string sk = 2;
+    string appKey = 3;
+    string businessPhone = 4;
+    bool isVerifySign = 5;
+  }
+  message Rsa {
+    string privateKey = 1;
+    string publicKey = 2;
+  }
+  message MsgPrefixInfo {
+    repeated string userAttendPrefixList = 1;
+    repeated string userAttendOfHelpPrefixList = 2;
+    repeated string renewFreePrefixList = 3;
+  }
+  message EmailConfig{
+    string serverHost = 1;
+    int32 serverPort = 2;
+    string fromAddress = 3;
+    string apiUser = 4;
+    string apiKey = 5;
+    repeated string toAddressList = 6;
+  }
+  Database database = 1;
+  Redis redis = 2;
+  CronTask cron_task = 3;
+  Queue queue = 4;
+  Feishu feishu = 5;
+  bool attend_enable = 6;
+  JoinGroup join_group = 7;
+  Nx nx = 8;
+  Rsa rsa = 9;
+  map<string, MsgPrefixInfo> methodInsertMsgInfo = 10;
+  EmailConfig emailConfig = 11;
+}
+
+message Business {
+  message Activity {
+    string id = 1;
+    string scheme = 2;
+    bool needSubscribe = 3;
+    bool isDebug = 4;
+    map<string, string> title = 5;
+    map<string, string> desc = 6;
+    map<string, string> imageLink = 7;
+    map<string, string> showDomain = 8;
+    repeated HelpText helpTextList = 9;
+    repeated StageInfo stageAwardList = 10;
+    repeated string waIdPrefixList = 11;
+    string waRedirectListPrefix = 12;
+    Wa wa = 13;
+    repeated string languageList = 14;
+    map<string, string> languageMap = 15;
+    repeated string channelList = 16;
+    map<string, string> channelMap = 17;
+  }
+  message ShortLink {
+    int32 count = 1;
+    repeated string baseUrls = 2;
+  }
+  message Wa{
+    string shortProject = 1;
+    string shortLinkApi = 2;
+    string shortLinkBaseUrl = 3;
+    string shortLinkSignKey = 4;
+  }
+
+  message HelpText {
+    string id = 1;
+    map<string, bodyTextInfo> bodyText = 2;
+    int32 weight = 3;
+
+    message bodyTextInfo {
+      string L01 = 1;
+      string L02 = 2;
+      string L03 = 3;
+      string L04 = 4;
+      string L05 = 5;
+    }
+  }
+
+  message StageInfo {
+    int32 helpNum = 1;
+    map<string, string> awardName = 2;
+    map<string, string> awardLink = 3;
+  }
+
+  message S3Config {
+    string preSignUrl = 1;
+    string bucket = 2;
+    string donAmin = 3;
+  }
+
+  message CDK {
+    message CDKType {
+      string dir = 1;
+      string queueName = 2;
+    }
+
+    double alarmThreshold = 1;
+    CDKType v0 = 2;
+    CDKType v3 = 3;
+    CDKType v6 = 4;
+    CDKType v9 = 5;
+    CDKType v12 = 6;
+    CDKType v15 = 7;
+  }
+
+  message Statistics {
+    message Email{
+      string webhook = 1;
+    }
+    Email email = 1;
+  }
+
+  message HelpCode {
+    int32 coroutineCount = 1;
+  }
+
+  message Drainage {
+    repeated string countryCodes = 1;
+  }
+
+  Activity activity = 1;
+  ShortLink shortLink = 2;
+  S3Config s3Config = 3;
+  CDK cdk = 4;
+  HelpCode helpCode = 5;
+  Statistics statistics = 6;
+  Drainage pushEvent1 = 7;
+  Drainage pushEvent2 = 8;
+  Drainage pushEvent3 = 9;
+}
+
+
+
+message MsgLanguageInfo {
+  map<string, MsgInfo> L01 = 1;
+  map<string, MsgInfo> L02 = 2;
+  map<string, MsgInfo> L03 = 3;
+  map<string, MsgInfo> L04 = 4;
+  map<string, MsgInfo> L05 = 5;
+}
+
+// MsgInfo
+message MsgInfo {
+  Interactive interactive = 1;
+  Template template = 2;
+  Params params = 3;
+}
+
+// Params
+message Params {
+  repeated string nicknameList = 1;
+  string language = 2;
+}
+
+// Interactive
+message Interactive {
+  string type = 1;
+  string imageLink = 2;
+  string bodyText = 3;
+  string dooterText = 4;
+  Action action = 5;
+}
+
+// Action
+message Action {
+  string displayText = 1;
+  string url = 2;
+  string shortLink = 3;
+  repeated Button buttons = 4;
+}
+
+// Button
+message Button {
+  string type = 1;
+  Reply reply = 2;
+}
+
+// Reply
+message Reply {
+  string id = 1;
+  string title = 2;
+}
+
+// Template
+message Template {
+  string name = 1;
+  NxReqTemplateLanguage language = 2;
+  repeated NxReqTemplateComponent components = 3;
+}
+
+// NxReqTemplateLanguage
+message NxReqTemplateLanguage {
+  string policy = 1;
+  string code = 2;
+}
+
+// NxReqTemplateComponent
+message NxReqTemplateComponent {
+  string type = 1;
+  repeated NxReqTemplateComponentParameter parameters = 2;
+  string subType = 3;
+  int32 index = 4;
+}
+
+// NxReqTemplateComponentParameter
+message NxReqTemplateComponentParameter {
+  string type = 1;
+  string text = 2;
+  NxReqTemplateComponentImage image = 3;
+}
+
+// NxReqTemplateComponentImage
+message NxReqTemplateComponentImage {
+  string id = 1;
+}
